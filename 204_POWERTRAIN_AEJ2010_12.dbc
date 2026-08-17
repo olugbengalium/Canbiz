@@ -1,0 +1,2391 @@
+VERSION ""
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_:
+
+BU_: ECM_1st_Group Vector__XXX
+
+BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
+BA_DEF_DEF_ "GenMsgCycleTime" 0;
+
+CM_ "Converted from Mercedes 204_POWERTRAIN_AEJ2010_1.dat binary database.";
+
+BO_ 1 EIS_A1: 8 ECM_1st_Group
+ SG_ ISw_Stat : 5|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 1 ISw_Stat "ISw_Stat [source enum/value-table reference]";
+ SG_ Ign_On_StProc_Inact : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1 Ign_On_StProc_Inact "Ign_On_StProc_Inact [source boolean]";
+ SG_ TxPkPosn_Rq : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1 TxPkPosn_Rq "TxPkPosn_Rq [source boolean]";
+ SG_ TxPkPosn_Emg_Rq : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1 TxPkPosn_Emg_Rq "TxPkPosn_Emg_Rq [source boolean]";
+ SG_ TxPkPosnAuto_Enbl : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1 TxPkPosnAuto_Enbl "TxPkPosnAuto_Enbl [source boolean]";
+ SG_ TxPkPosn_Rq_SBC_Enbl : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1 TxPkPosn_Rq_SBC_Enbl "TxPkPosn_Rq_SBC_Enbl [source boolean]";
+ SG_ KG_IgnCtrl_Actv : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1 KG_IgnCtrl_Actv "KG_IgnCtrl_Actv [source boolean]";
+ SG_ EngSt_Enbl_Rq_KG : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1 EngSt_Enbl_Rq_KG "EngSt_Enbl_Rq_KG [source boolean]";
+ SG_ KG_StSw_Psd : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1 KG_StSw_Psd "KG_StSw_Psd [source boolean]";
+ SG_ KG_SevKeysDet : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1 KG_SevKeysDet "KG_SevKeysDet [source boolean]";
+ SG_ ESL_Lk_Rq : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 1 ESL_Lk_Rq "ESL_Lk_Rq [source enum/value-table reference]";
+ SG_ AutoDrLk_Rq_Src : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 1 AutoDrLk_Rq_Src "AutoDrLk_Rq_Src [source enum/value-table reference]";
+ SG_ Prof_Stat : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 1 Prof_Stat "Prof_Stat [source enum/value-table reference]";
+ SG_ AutoDrLk_Stat : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 1 AutoDrLk_Stat "AutoDrLk_Stat [source enum/value-table reference]";
+ SG_ ProfMd_Stat : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 1 ProfMd_Stat "ProfMd_Stat [source enum/value-table reference]";
+ SG_ SPCR_Conf_EIS : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 1 SPCR_Conf_EIS "SPCR_Conf_EIS [source enum/value-table reference]";
+ SG_ CLkS_Lk_Stat : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 1 CLkS_Lk_Stat "CLkS_Lk_Stat [source enum/value-table reference]";
+ SG_ CLkS_DL_Stat : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 1 CLkS_DL_Stat "CLkS_DL_Stat [source enum/value-table reference]";
+ SG_ CLkS_Gas_Dr_Stat : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 1 CLkS_Gas_Dr_Stat "CLkS_Gas_Dr_Stat [source enum/value-table reference]";
+ SG_ CLkS_Dr_FL_Stat : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 1 CLkS_Dr_FL_Stat "CLkS_Dr_FL_Stat [source enum/value-table reference]";
+ SG_ CLkS_Dr_FR_Stat : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 1 CLkS_Dr_FR_Stat "CLkS_Dr_FR_Stat [source enum/value-table reference]";
+ SG_ CLkS_Dr_RL_Stat : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 1 CLkS_Dr_RL_Stat "CLkS_Dr_RL_Stat [source enum/value-table reference]";
+ SG_ CLkS_Dr_RR_Stat : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 1 CLkS_Dr_RR_Stat "CLkS_Dr_RR_Stat [source enum/value-table reference]";
+ SG_ KeyLine1_Appr : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1 KeyLine1_Appr "KeyLine1_Appr [source boolean]";
+ SG_ KeyLine2_Appr : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1 KeyLine2_Appr "KeyLine2_Appr [source boolean]";
+ SG_ KeyLine3_Appr : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1 KeyLine3_Appr "KeyLine3_Appr [source boolean]";
+ SG_ KeyLine4_Appr : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1 KeyLine4_Appr "KeyLine4_Appr [source boolean]";
+ SG_ KeyLine5_Appr : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1 KeyLine5_Appr "KeyLine5_Appr [source boolean]";
+ SG_ KeyLine6_Appr : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1 KeyLine6_Appr "KeyLine6_Appr [source boolean]";
+ SG_ KeyLine7_Appr : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1 KeyLine7_Appr "KeyLine7_Appr [source boolean]";
+ SG_ KeyLine8_Appr : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1 KeyLine8_Appr "KeyLine8_Appr [source boolean]";
+ SG_ CLkS_Lk_Stat3 : 53|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 1 CLkS_Lk_Stat3 "CLkS_Lk_Stat3 [source enum/value-table reference]";
+ SG_ SPCR_AcustWarn_Rq_EIS : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1 SPCR_AcustWarn_Rq_EIS "SPCR_AcustWarn_Rq_EIS [source boolean]";
+ SG_ MC_EIS_A1 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 1 MC_EIS_A1 "MC_EIS_A1";
+ SG_ CRC_EIS_A1 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1 CRC_EIS_A1 "CRC_EIS_A1";
+
+BA_ "GenMsgCycleTime" BO_ 1 35;
+
+BO_ 3 STW_ANGL_STAT: 8 ECM_1st_Group
+ SG_ StW_Angl : 2|14@1+ (0.5,-2048) [-2048|6143.5] "deg" Vector__XXX
+CM_ SG_ 3 StW_Angl "StW_Angl";
+ SG_ StW_AnglSpd : 18|14@1+ (0.5,-2048) [-2048|6143.5] "deg/s" Vector__XXX
+CM_ SG_ 3 StW_AnglSpd "StW_AnglSpd";
+ SG_ StW_AnglSens_Stat : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 3 StW_AnglSens_Stat "StW_AnglSens_Stat [source enum/value-table reference]";
+ SG_ StW_AnglSens_Id : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 3 StW_AnglSens_Id "StW_AnglSens_Id [source enum/value-table reference]";
+ SG_ MC_STW_ANGL_STAT : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 3 MC_STW_ANGL_STAT "MC_STW_ANGL_STAT";
+ SG_ CRC_STW_ANGL_STAT : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 3 CRC_STW_ANGL_STAT "CRC_STW_ANGL_STAT";
+
+BA_ "GenMsgCycleTime" BO_ 3 6;
+
+BO_ 5 BRK_STAT: 8 ECM_1st_Group
+ SG_ Brk_Stat : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 5 Brk_Stat "Brk_Stat [source enum/value-table reference]";
+ SG_ SPCR_Sp_Stat : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 5 SPCR_Sp_Stat "SPCR_Sp_Stat [source enum/value-table reference]";
+ SG_ BrkPdl_Stat : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 5 BrkPdl_Stat "BrkPdl_Stat [source enum/value-table reference]";
+ SG_ PkBrk_Rq_SBC : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 5 PkBrk_Rq_SBC "PkBrk_Rq_SBC [source enum/value-table reference]";
+ SG_ BrkIntrvntn_Actv_ESP : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 5 BrkIntrvntn_Actv_ESP "BrkIntrvntn_Actv_ESP [source boolean]";
+ SG_ BrkIntrvntn_Actv_AS : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 5 BrkIntrvntn_Actv_AS "BrkIntrvntn_Actv_AS [source boolean]";
+ SG_ BrkIntrvntn_Actv_EPKB : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 5 BrkIntrvntn_Actv_EPKB "BrkIntrvntn_Actv_EPKB [source boolean]";
+ SG_ BrkIntrvntn_Enbl : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 5 BrkIntrvntn_Enbl "BrkIntrvntn_Enbl [source boolean]";
+ SG_ EmgBrk_Actv : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 5 EmgBrk_Actv "EmgBrk_Actv [source boolean]";
+ SG_ FullBrk_Actv : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 5 FullBrk_Actv "FullBrk_Actv [source boolean]";
+ SG_ SPCR_Md_V3 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 5 SPCR_Md_V3 "SPCR_Md_V3 [source enum/value-table reference]";
+ SG_ BrkTrq : 20|12@1+ (3,0) [0|12285] "Nm" Vector__XXX
+CM_ SG_ 5 BrkTrq "BrkTrq";
+ SG_ ESP_Sys_Stat : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 5 ESP_Sys_Stat "ESP_Sys_Stat [source enum/value-table reference]";
+ SG_ StTrq_Stat : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 5 StTrq_Stat "StTrq_Stat [source enum/value-table reference]";
+ SG_ SPCR_Excpt_Rq : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 5 SPCR_Excpt_Rq "SPCR_Excpt_Rq [source enum/value-table reference]";
+ SG_ SPCR_Veh_Immo : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 5 SPCR_Veh_Immo "SPCR_Veh_Immo [source boolean]";
+ SG_ TxPkPosn_Rq_SBC : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 5 TxPkPosn_Rq_SBC "TxPkPosn_Rq_SBC [source boolean]";
+ SG_ TBCC_Stat : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 5 TBCC_Stat "TBCC_Stat [source enum/value-table reference]";
+ SG_ DSR_Actv : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 5 DSR_Actv "DSR_Actv [source boolean]";
+ SG_ DSR_Sys_Flt : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 5 DSR_Sys_Flt "DSR_Sys_Flt [source boolean]";
+ SG_ HSA_Sys_Flt : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 5 HSA_Sys_Flt "HSA_Sys_Flt [source boolean]";
+ SG_ ESP_Md : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 5 ESP_Md "ESP_Md [source enum/value-table reference]";
+ SG_ SPCR_AS_Dsabl : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 5 SPCR_AS_Dsabl "SPCR_AS_Dsabl [source enum/value-table reference]";
+ SG_ SPCR_AS_Off_Rq : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 5 SPCR_AS_Off_Rq "SPCR_AS_Off_Rq [source enum/value-table reference]";
+ SG_ MC_BRK_STAT : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 5 MC_BRK_STAT "MC_BRK_STAT";
+ SG_ CRC_BRK_STAT : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 5 CRC_BRK_STAT "CRC_BRK_STAT";
+
+BA_ "GenMsgCycleTime" BO_ 5 26;
+
+BO_ 15 CGW_STAT: 1 ECM_1st_Group
+ SG_ CGW_Rout_Stat : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 15 CGW_Rout_Stat "CGW_Rout_Stat [source enum/value-table reference]";
+ SG_ BusFlt_PrmntActv : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 15 BusFlt_PrmntActv "BusFlt_PrmntActv [source boolean]";
+
+BA_ "GenMsgCycleTime" BO_ 15 2;
+
+BO_ 21 CTRL_U_A2: 4 ECM_1st_Group
+ SG_ SwIllLvl : 0|8@1+ (1,0) [0|255] "%" Vector__XXX
+CM_ SG_ 21 SwIllLvl "SwIllLvl";
+ SG_ DispBrt_IC : 8|8@1+ (1,0) [0|255] "%" Vector__XXX
+CM_ SG_ 21 DispBrt_IC "DispBrt_IC [source enum/value-table reference]";
+ SG_ DispBrt_HU_V2 : 16|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+CM_ SG_ 21 DispBrt_HU_V2 "DispBrt_HU_V2";
+ SG_ DispBrt_NV : 24|8@1+ (1,0) [0|255] "%" Vector__XXX
+CM_ SG_ 21 DispBrt_NV "DispBrt_NV";
+
+BA_ "GenMsgCycleTime" BO_ 21 4;
+
+BO_ 61 SSM_RS: 8 ECM_1st_Group
+ SG_ SSM_Rdy_Stat : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 61 SSM_Rdy_Stat "SSM_Rdy_Stat [source enum/value-table reference]";
+ SG_ SSM_Engg_Stat : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 61 SSM_Engg_Stat "SSM_Engg_Stat [source enum/value-table reference]";
+ SG_ SSM_AfterRun_Stat : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 61 SSM_AfterRun_Stat "SSM_AfterRun_Stat [source boolean]";
+ SG_ SSM_EngShutDn_Stat : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 61 SSM_EngShutDn_Stat "SSM_EngShutDn_Stat [source boolean]";
+ SG_ SSM_Stat : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 61 SSM_Stat "SSM_Stat [source enum/value-table reference]";
+ SG_ SSM_Diag_Stat : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 61 SSM_Diag_Stat "SSM_Diag_Stat [source enum/value-table reference]";
+ SG_ CRC_SSM_RS : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 61 CRC_SSM_RS "CRC_SSM_RS";
+
+BA_ "GenMsgCycleTime" BO_ 61 7;
+
+BO_ 63 SSM_RQ_ECM: 8 ECM_1st_Group
+ SG_ SSM_Engg_CrankPosn_Enbl : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 63 SSM_Engg_CrankPosn_Enbl "SSM_Engg_CrankPosn_Enbl [source enum/value-table reference]";
+ SG_ SSM_StartMd : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 63 SSM_StartMd "SSM_StartMd [source enum/value-table reference]";
+ SG_ SSM_Start_Rq : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 63 SSM_Start_Rq "SSM_Start_Rq [source enum/value-table reference]";
+ SG_ CrankAngl : 6|10@1+ (0.72000002861,0) [0|736.560029268] "deg" Vector__XXX
+CM_ SG_ 63 CrankAngl "CrankAngl";
+ SG_ CrankAngl_Rq : 22|10@1+ (0.72000002861,0) [0|736.560029268] "deg" Vector__XXX
+CM_ SG_ 63 CrankAngl_Rq "CrankAngl_Rq";
+ SG_ SSM_Engg_Enbl_ECM : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 63 SSM_Engg_Enbl_ECM "SSM_Engg_Enbl_ECM [source boolean]";
+ SG_ SSM_EngRPM : 34|14@1+ (1,0) [0|16383] "rpm" Vector__XXX
+CM_ SG_ 63 SSM_EngRPM "SSM_EngRPM";
+ SG_ MC_SSM_RQ_ECM : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 63 MC_SSM_RQ_ECM "MC_SSM_RQ_ECM";
+ SG_ CRC_SSM_RQ_ECM : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 63 CRC_SSM_RQ_ECM "CRC_SSM_RQ_ECM";
+
+BA_ "GenMsgCycleTime" BO_ 63 9;
+
+BO_ 95 BRK_STAT2: 8 ECM_1st_Group
+ SG_ BrkTrq_D : 4|12@1+ (3,0) [0|12285] "Nm" Vector__XXX
+CM_ SG_ 95 BrkTrq_D "BrkTrq_D";
+ SG_ ECO_StVlvCurr_Rq : 16|4@1+ (100,0) [0|1500] "mA" Vector__XXX
+CM_ SG_ 95 ECO_StVlvCurr_Rq "ECO_StVlvCurr_Rq";
+ SG_ BrkTrqGrdnt_D : 20|12@1+ (97.6797790527,-200048) [-200048|199950.695221] "Nm/s" Vector__XXX
+CM_ SG_ 95 BrkTrqGrdnt_D "BrkTrqGrdnt_D";
+ SG_ ESP_Oprtn_Stat_AS : 34|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 95 ESP_Oprtn_Stat_AS "ESP_Oprtn_Stat_AS [source enum/value-table reference]";
+ SG_ StW_AnglHP_ESP : 38|10@1+ (0.10000000149,-51.2000007629) [-51.2000007629|51.1000007614] "deg" Vector__XXX
+CM_ SG_ 95 StW_AnglHP_ESP "StW_AnglHP_ESP";
+ SG_ MC_BRK_STAT2 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 95 MC_BRK_STAT2 "MC_BRK_STAT2";
+ SG_ CRC_BRK_STAT2 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 95 CRC_BRK_STAT2 "CRC_BRK_STAT2";
+
+BA_ "GenMsgCycleTime" BO_ 95 7;
+
+BO_ 105 LM_A1: 2 ECM_1st_Group
+ SG_ PkLmp_Lt_On_Rq : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 105 PkLmp_Lt_On_Rq "PkLmp_Lt_On_Rq [source boolean]";
+ SG_ PkLmp_Rt_On_Rq : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 105 PkLmp_Rt_On_Rq "PkLmp_Rt_On_Rq [source boolean]";
+ SG_ PosnLmp_On_Rq : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 105 PosnLmp_On_Rq "PosnLmp_On_Rq [source boolean]";
+ SG_ LoBm_On_Rq : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 105 LoBm_On_Rq "LoBm_On_Rq [source boolean]";
+ SG_ FogLmp_Ft_On_Rq : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 105 FogLmp_Ft_On_Rq "FogLmp_Ft_On_Rq [source boolean]";
+ SG_ FogLmp_R_On_Rq : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 105 FogLmp_R_On_Rq "FogLmp_R_On_Rq [source boolean]";
+ SG_ ADL_Actv : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 105 ADL_Actv "ADL_Actv [source boolean]";
+ SG_ NS_Ill_Actv : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 105 NS_Ill_Actv "NS_Ill_Actv [source boolean]";
+ SG_ SwIll_Off_Rq : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 105 SwIll_Off_Rq "SwIll_Off_Rq [source boolean]";
+ SG_ FogLmp_Ft_IndLmp_On_Rq : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 105 FogLmp_Ft_IndLmp_On_Rq "FogLmp_Ft_IndLmp_On_Rq [source boolean]";
+ SG_ LoBm_IndLmp_On_Rq : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 105 LoBm_IndLmp_On_Rq "LoBm_IndLmp_On_Rq [source boolean]";
+ SG_ IHC_Stat_V2 : 11|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 105 IHC_Stat_V2 "IHC_Stat_V2 [source enum/value-table reference]";
+ SG_ FogLmp_R_IndLmp_On_Rq : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 105 FogLmp_R_IndLmp_On_Rq "FogLmp_R_IndLmp_On_Rq [source boolean]";
+ SG_ PosnLmp_IndLmp_On_Rq : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 105 PosnLmp_IndLmp_On_Rq "PosnLmp_IndLmp_On_Rq [source boolean]";
+ SG_ SVS_ExtLmp_Actv : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 105 SVS_ExtLmp_Actv "SVS_ExtLmp_Actv [source boolean]";
+
+BA_ "GenMsgCycleTime" BO_ 105 15;
+
+BO_ 107 SBW_RQ_DSI: 4 ECM_1st_Group
+ SG_ StW_Sw_Stat3_DSI : 5|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 107 StW_Sw_Stat3_DSI "StW_Sw_Stat3_DSI [source enum/value-table reference]";
+ SG_ MsgTxmtId_DSI : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 107 MsgTxmtId_DSI "MsgTxmtId_DSI [source enum/value-table reference]";
+ SG_ TSL_RND_Posn_StW_DSI : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 107 TSL_RND_Posn_StW_DSI "TSL_RND_Posn_StW_DSI [source enum/value-table reference]";
+ SG_ TSL_P_Psd_StW_DSI : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 107 TSL_P_Psd_StW_DSI "TSL_P_Psd_StW_DSI [source enum/value-table reference]";
+ SG_ TxDrvProgSw_Psd_DSI : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 107 TxDrvProgSw_Psd_DSI "TxDrvProgSw_Psd_DSI [source boolean]";
+ SG_ MC_SBW_RQ_DSI : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 107 MC_SBW_RQ_DSI "MC_SBW_RQ_DSI";
+ SG_ CRC_SBW_RQ_DSI : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 107 CRC_SBW_RQ_DSI "CRC_SBW_RQ_DSI";
+
+BA_ "GenMsgCycleTime" BO_ 107 7;
+
+BO_ 109 SBW_RQ_SCCM: 4 ECM_1st_Group
+ SG_ StW_Sw_Stat3 : 5|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 109 StW_Sw_Stat3 "StW_Sw_Stat3 [source enum/value-table reference]";
+ SG_ MsgTxmtId : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 109 MsgTxmtId "MsgTxmtId [source enum/value-table reference]";
+ SG_ TSL_RND_Posn_StW : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 109 TSL_RND_Posn_StW "TSL_RND_Posn_StW [source enum/value-table reference]";
+ SG_ TSL_P_Psd_StW : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 109 TSL_P_Psd_StW "TSL_P_Psd_StW [source enum/value-table reference]";
+ SG_ TSL_Sgnl_Id_StW : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 109 TSL_Sgnl_Id_StW "TSL_Sgnl_Id_StW [source enum/value-table reference]";
+ SG_ MC_SBW_RQ_SCCM : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 109 MC_SBW_RQ_SCCM "MC_SBW_RQ_SCCM";
+ SG_ CRC_SBW_RQ_SCCM : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 109 CRC_SBW_RQ_SCCM "CRC_SBW_RQ_SCCM";
+
+BA_ "GenMsgCycleTime" BO_ 109 7;
+
+BO_ 115 SBW_RS_ISM: 8 ECM_1st_Group
+ SG_ TSL_Posn_ISM : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 115 TSL_Posn_ISM "TSL_Posn_ISM [source enum/value-table reference]";
+ SG_ TSL_MtnLk_Actv : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 115 TSL_MtnLk_Actv "TSL_MtnLk_Actv [source boolean]";
+ SG_ TSL_Posn_P_ISM : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 115 TSL_Posn_P_ISM "TSL_Posn_P_ISM [source boolean]";
+ SG_ TxDrvProgSw_Psd_V3 : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 115 TxDrvProgSw_Psd_V3 "TxDrvProgSw_Psd_V3 [source boolean]";
+ SG_ MC_SBW_RS_ISM : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 115 MC_SBW_RS_ISM "MC_SBW_RS_ISM";
+ SG_ CRC_SBW_RS_ISM : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 115 CRC_SBW_RS_ISM "CRC_SBW_RS_ISM";
+
+BA_ "GenMsgCycleTime" BO_ 115 6;
+
+BO_ 213 ENG_RQ_SBC: 8 ECM_1st_Group
+ SG_ EngTrqMax_Rq_SBC : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 213 EngTrqMax_Rq_SBC "EngTrqMax_Rq_SBC [source boolean]";
+ SG_ EngTrqMin_Rq_SBC : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 213 EngTrqMin_Rq_SBC "EngTrqMin_Rq_SBC [source boolean]";
+ SG_ EngTrq_Rq_SBC : 3|13@1+ (0.25,-500) [-500|1547.75] "Nm" Vector__XXX
+CM_ SG_ 213 EngTrq_Rq_SBC "EngTrq_Rq_SBC";
+ SG_ SSA_DsablPrmnt_Rq_SBC : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 213 SSA_DsablPrmnt_Rq_SBC "SSA_DsablPrmnt_Rq_SBC [source boolean]";
+ SG_ SSA_Enbl_Rq_SBC : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 213 SSA_Enbl_Rq_SBC "SSA_Enbl_Rq_SBC [source boolean]";
+ SG_ IntrvntnMd_SBC : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 213 IntrvntnMd_SBC "IntrvntnMd_SBC [source enum/value-table reference]";
+ SG_ EPKB_Enbl_Rq : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 213 EPKB_Enbl_Rq "EPKB_Enbl_Rq [source boolean]";
+ SG_ RDU_Enbl_Rq : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 213 RDU_Enbl_Rq "RDU_Enbl_Rq [source boolean]";
+ SG_ WhlSlpRecup : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 213 WhlSlpRecup "WhlSlpRecup [source boolean]";
+ SG_ RecupEnbl_RBS : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 213 RecupEnbl_RBS "RecupEnbl_RBS [source boolean]";
+ SG_ EngTrqMax_Rq_RBS : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 213 EngTrqMax_Rq_RBS "EngTrqMax_Rq_RBS [source boolean]";
+ SG_ EngTrqMin_Rq_RBS : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 213 EngTrqMin_Rq_RBS "EngTrqMin_Rq_RBS [source boolean]";
+ SG_ EngTrq_Rq_RBS : 35|13@1+ (0.25,-500) [-500|1547.75] "Nm" Vector__XXX
+CM_ SG_ 213 EngTrq_Rq_RBS "EngTrq_Rq_RBS";
+ SG_ MC_ENG_RQ_SBC : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 213 MC_ENG_RQ_SBC "MC_ENG_RQ_SBC";
+ SG_ CRC_ENG_RQ_SBC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 213 CRC_ENG_RQ_SBC "CRC_ENG_RQ_SBC";
+
+BA_ "GenMsgCycleTime" BO_ 213 15;
+
+BO_ 215 ENG_RQ4_TCM: 8 ECM_1st_Group
+ SG_ EM_BoostTrq_Rq_TCM : 16|8@1+ (2,0) [0|510] "Nm" Vector__XXX
+CM_ SG_ 215 EM_BoostTrq_Rq_TCM "EM_BoostTrq_Rq_TCM";
+ SG_ WDC_TrqTxMax_TCM : 3|13@1+ (0.25,-500) [-500|1547.75] "Nm" Vector__XXX
+CM_ SG_ 215 WDC_TrqTxMax_TCM "WDC_TrqTxMax_TCM";
+ SG_ MC_ENG_RQ4_TCM : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 215 MC_ENG_RQ4_TCM "MC_ENG_RQ4_TCM";
+ SG_ CRC_ENG_RQ4_TCM : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 215 CRC_ENG_RQ4_TCM "CRC_ENG_RQ4_TCM";
+
+BA_ "GenMsgCycleTime" BO_ 215 1;
+
+BO_ 217 EM2_RS1_PT: 8 ECM_1st_Group
+ SG_ HybSys_Actv : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 217 HybSys_Actv "HybSys_Actv [source boolean]";
+ SG_ ElecBoost_Avl : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 217 ElecBoost_Avl "ElecBoost_Avl [source boolean]";
+ SG_ Recup_Avl : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 217 Recup_Avl "Recup_Avl [source boolean]";
+ SG_ EM2_Trq : 3|13@1+ (0.25,-500) [-500|1547.75] "Nm" Vector__XXX
+CM_ SG_ 217 EM2_Trq "EM2_Trq";
+ SG_ Parity_EM2_EngShutDn_Stat : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 217 Parity_EM2_EngShutDn_Stat "Parity_EM2_EngShutDn_Stat [source boolean]";
+ SG_ EM2_EngShutDn_Stat : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 217 EM2_EngShutDn_Stat "EM2_EngShutDn_Stat [source enum/value-table reference]";
+ SG_ EM2_BoostTrqMax_TCM : 19|13@1+ (0.25,-500) [-500|1547.75] "Nm" Vector__XXX
+CM_ SG_ 217 EM2_BoostTrqMax_TCM "EM2_BoostTrqMax_TCM";
+ SG_ EM2_EngShutDn_Stat_MC : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 217 EM2_EngShutDn_Stat_MC "EM2_EngShutDn_Stat_MC";
+ SG_ EM2_TrqDynMin_TCM : 35|13@1+ (0.25,-500) [-500|1547.75] "Nm" Vector__XXX
+CM_ SG_ 217 EM2_TrqDynMin_TCM "EM2_TrqDynMin_TCM";
+ SG_ HybDrv_Md : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 217 HybDrv_Md "HybDrv_Md [source enum/value-table reference]";
+ SG_ MC_EM2_RS1_PT : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 217 MC_EM2_RS1_PT "MC_EM2_RS1_PT";
+ SG_ CRC_EM2_RS1_PT : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 217 CRC_EM2_RS1_PT "CRC_EM2_RS1_PT";
+
+BA_ "GenMsgCycleTime" BO_ 217 12;
+
+BO_ 221 EPKB_STAT: 8 ECM_1st_Group
+ SG_ PkBrk_Stat : 5|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 221 PkBrk_Stat "PkBrk_Stat [source enum/value-table reference]";
+ SG_ EPkBrk_Stat : 2|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 221 EPkBrk_Stat "EPkBrk_Stat [source enum/value-table reference]";
+ SG_ PkBrkSw_Stat : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 221 PkBrkSw_Stat "PkBrkSw_Stat [source enum/value-table reference]";
+ SG_ DynBrkMd : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 221 DynBrkMd "DynBrkMd [source enum/value-table reference]";
+ SG_ SBC_Enbl_Rq_EPKB : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 221 SBC_Enbl_Rq_EPKB "SBC_Enbl_Rq_EPKB [source boolean]";
+ SG_ BrkTrq_Rq_EPKB : 12|12@1+ (3,0) [0|12285] "Nm" Vector__XXX
+CM_ SG_ 221 BrkTrq_Rq_EPKB "BrkTrq_Rq_EPKB";
+ SG_ BrkLgt_On_Rq : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 221 BrkLgt_On_Rq "BrkLgt_On_Rq [source enum/value-table reference]";
+ SG_ TxPkPosn_Rq_EPKB : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 221 TxPkPosn_Rq_EPKB "TxPkPosn_Rq_EPKB [source enum/value-table reference]";
+ SG_ BatCplSw_Rq_EPKB : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 221 BatCplSw_Rq_EPKB "BatCplSw_Rq_EPKB [source enum/value-table reference]";
+ SG_ MC_EPKB_STAT : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 221 MC_EPKB_STAT "MC_EPKB_STAT";
+ SG_ CRC_EPKB_STAT : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 221 CRC_EPKB_STAT "CRC_EPKB_STAT";
+
+BA_ "GenMsgCycleTime" BO_ 221 11;
+
+BO_ 241 ENG_RQ1_TCM: 8 ECM_1st_Group
+ SG_ PwrFreeD_Actv : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 241 PwrFreeD_Actv "PwrFreeD_Actv [source boolean]";
+ SG_ EngTrqMax_Rq_TCM : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 241 EngTrqMax_Rq_TCM "EngTrqMax_Rq_TCM [source boolean]";
+ SG_ EngTrqMin_Rq_TCM : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 241 EngTrqMin_Rq_TCM "EngTrqMin_Rq_TCM [source boolean]";
+ SG_ EngTrq_Rq_TCM : 3|13@1+ (0.25,-500) [-500|1547.75] "Nm" Vector__XXX
+CM_ SG_ 241 EngTrq_Rq_TCM "EngTrq_Rq_TCM";
+ SG_ IntrvntnMd_TCM : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 241 IntrvntnMd_TCM "IntrvntnMd_TCM [source enum/value-table reference]";
+ SG_ SSA_Clutch_Stat : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 241 SSA_Clutch_Stat "SSA_Clutch_Stat [source enum/value-table reference]";
+ SG_ VehCreep_Actv : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 241 VehCreep_Actv "VehCreep_Actv [source boolean]";
+ SG_ SSA_Enbl_Rq_TCM : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 241 SSA_Enbl_Rq_TCM "SSA_Enbl_Rq_TCM [source boolean]";
+ SG_ JmpSt_Actv : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 241 JmpSt_Actv "JmpSt_Actv [source boolean]";
+ SG_ EngEmgOff_Rq : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 241 EngEmgOff_Rq "EngEmgOff_Rq [source boolean]";
+ SG_ EngSt_Enbl_Rq_TCM : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 241 EngSt_Enbl_Rq_TCM "EngSt_Enbl_Rq_TCM [source boolean]";
+ SG_ MC_ENG_RQ1_TCM : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 241 MC_ENG_RQ1_TCM "MC_ENG_RQ1_TCM";
+ SG_ CRC_ENG_RQ1_TCM : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 241 CRC_ENG_RQ1_TCM "CRC_ENG_RQ1_TCM";
+ SG_ EngRPM_Rq_TCM : 36|12@1+ (2,0) [0|8190] "rpm" Vector__XXX
+CM_ SG_ 241 EngRPM_Rq_TCM "EngRPM_Rq_TCM";
+ SG_ HybIntrvntnMd_TCM : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 241 HybIntrvntnMd_TCM "HybIntrvntnMd_TCM [source enum/value-table reference]";
+ SG_ DCT_TrqSpdIfc_Actv : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 241 DCT_TrqSpdIfc_Actv "DCT_TrqSpdIfc_Actv [source boolean]";
+ SG_ TxDnShiftMd : 18|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 241 TxDnShiftMd "TxDnShiftMd [source enum/value-table reference]";
+ SG_ EngRPM_SyncTm_Rq_TCM : 24|8@1+ (0.019999999553,0) [0|5.09999988601] "s" Vector__XXX
+CM_ SG_ 241 EngRPM_SyncTm_Rq_TCM "EngRPM_SyncTm_Rq_TCM";
+
+BA_ "GenMsgCycleTime" BO_ 241 13;
+
+BO_ 243 ENG_RQ2_TCM: 8 ECM_1st_Group
+ SG_ Gr : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 243 Gr "Gr [source enum/value-table reference]";
+ SG_ Gr_Target : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 243 Gr_Target "Gr_Target [source enum/value-table reference]";
+ SG_ Clutch_Actv_Stat : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 243 Clutch_Actv_Stat "Clutch_Actv_Stat [source enum/value-table reference]";
+ SG_ EngWhlTrqRatio_TCM : 18|14@1+ (0.00999999977648,0) [0|163.829996338] "" Vector__XXX
+CM_ SG_ 243 EngWhlTrqRatio_TCM "EngWhlTrqRatio_TCM";
+ SG_ TxTrqLoss : 32|8@1+ (0.25,0) [0|63.75] "Nm" Vector__XXX
+CM_ SG_ 243 TxTrqLoss "TxTrqLoss";
+ SG_ TxShiftStyle : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 243 TxShiftStyle "TxShiftStyle [source enum/value-table reference]";
+ SG_ TxMechStyle : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 243 TxMechStyle "TxMechStyle [source enum/value-table reference]";
+ SG_ TxStyle : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 243 TxStyle "TxStyle [source enum/value-table reference]";
+ SG_ VehDrvStyle : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 243 VehDrvStyle "VehDrvStyle [source enum/value-table reference]";
+ SG_ TCM_EngIdleRPM_Lvl_Rq : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 243 TCM_EngIdleRPM_Lvl_Rq "TCM_EngIdleRPM_Lvl_Rq [source enum/value-table reference]";
+ SG_ MC_ENG_RQ2_TCM : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 243 MC_ENG_RQ2_TCM "MC_ENG_RQ2_TCM";
+ SG_ CRC_ENG_RQ2_TCM : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 243 CRC_ENG_RQ2_TCM "CRC_ENG_RQ2_TCM";
+ SG_ DrvAccelMax_Stat : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 243 DrvAccelMax_Stat "DrvAccelMax_Stat [source enum/value-table reference]";
+
+BA_ "GenMsgCycleTime" BO_ 243 12;
+
+BO_ 244 ENG_RQ3_TCM: 8 ECM_1st_Group
+ SG_ TxLHOM_Stat : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 244 TxLHOM_Stat "TxLHOM_Stat [source enum/value-table reference]";
+ SG_ WDC_Trq : 3|13@1+ (0.25,-500) [-500|1547.75] "Nm" Vector__XXX
+CM_ SG_ 244 WDC_Trq "WDC_Trq";
+ SG_ WDC_TrqPreCtrl : 16|8@1+ (1,0) [0|255] "Nm" Vector__XXX
+CM_ SG_ 244 WDC_TrqPreCtrl "WDC_TrqPreCtrl";
+ SG_ TxInTrqCreep_Rq_TCM : 24|8@1+ (1,0) [0|255] "Nm" Vector__XXX
+CM_ SG_ 244 TxInTrqCreep_Rq_TCM "TxInTrqCreep_Rq_TCM";
+ SG_ TxInRPM_Creep_Rq_TCM : 36|12@1+ (2,0) [0|8190] "rpm" Vector__XXX
+CM_ SG_ 244 TxInRPM_Creep_Rq_TCM "TxInRPM_Creep_Rq_TCM";
+ SG_ DCT_TrqSpdIfc_Actv : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 244 DCT_TrqSpdIfc_Actv "DCT_TrqSpdIfc_Actv [source boolean]";
+ SG_ TxHybDrvMd : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 244 TxHybDrvMd "TxHybDrvMd [source enum/value-table reference]";
+ SG_ MC_ENG_RQ3_TCM : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 244 MC_ENG_RQ3_TCM "MC_ENG_RQ3_TCM";
+ SG_ CRC_ENG_RQ3_TCM : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 244 CRC_ENG_RQ3_TCM "CRC_ENG_RQ3_TCM";
+
+BA_ "GenMsgCycleTime" BO_ 244 9;
+
+BO_ 245 EM1_RS1_PT: 8 ECM_1st_Group
+ SG_ HybSys_Actv : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 245 HybSys_Actv "HybSys_Actv [source boolean]";
+ SG_ ElecBoost_Avl : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 245 ElecBoost_Avl "ElecBoost_Avl [source boolean]";
+ SG_ Recup_Avl : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 245 Recup_Avl "Recup_Avl [source boolean]";
+ SG_ EM1_Trq : 3|13@1+ (0.25,-500) [-500|1547.75] "Nm" Vector__XXX
+CM_ SG_ 245 EM1_Trq "EM1_Trq";
+ SG_ EM1_BoostTrqMax_TCM : 19|13@1+ (0.25,-500) [-500|1547.75] "Nm" Vector__XXX
+CM_ SG_ 245 EM1_BoostTrqMax_TCM "EM1_BoostTrqMax_TCM";
+ SG_ EM1_TrqDynMin_TCM : 35|13@1+ (0.25,-500) [-500|1547.75] "Nm" Vector__XXX
+CM_ SG_ 245 EM1_TrqDynMin_TCM "EM1_TrqDynMin_TCM";
+ SG_ HybDrv_Md : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 245 HybDrv_Md "HybDrv_Md [source enum/value-table reference]";
+ SG_ MC_EM1_RS1_PT : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 245 MC_EM1_RS1_PT "MC_EM1_RS1_PT";
+ SG_ CRC_EM1_RS1_PT : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 245 CRC_EM1_RS1_PT "CRC_EM1_RS1_PT";
+
+BA_ "GenMsgCycleTime" BO_ 245 9;
+
+BO_ 249 HVAC_RS1: 8 ECM_1st_Group
+ SG_ HVAC_TxShftPoint_Inc_Rq : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 249 HVAC_TxShftPoint_Inc_Rq "HVAC_TxShftPoint_Inc_Rq [source boolean]";
+ SG_ HVAC_TxShftPointHt_Inc_Rq : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 249 HVAC_TxShftPointHt_Inc_Rq "HVAC_TxShftPointHt_Inc_Rq [source boolean]";
+ SG_ SSA_EngSt_Rq_HVAC : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 249 SSA_EngSt_Rq_HVAC "SSA_EngSt_Rq_HVAC [source boolean]";
+ SG_ SSA_Enbl_Rq_HVAC : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 249 SSA_Enbl_Rq_HVAC "SSA_Enbl_Rq_HVAC [source boolean]";
+ SG_ HVAC_Recup_Enbl_Rq : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 249 HVAC_Recup_Enbl_Rq "HVAC_Recup_Enbl_Rq [source boolean]";
+ SG_ HVAC_EngIdleRPM_Inc_Rq : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 249 HVAC_EngIdleRPM_Inc_Rq "HVAC_EngIdleRPM_Inc_Rq [source boolean]";
+ SG_ HVAC_AuxHt_Enbl : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 249 HVAC_AuxHt_Enbl "HVAC_AuxHt_Enbl [source boolean]";
+ SG_ HVAC_Comp_Ft_On : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 249 HVAC_Comp_Ft_On "HVAC_Comp_Ft_On [source boolean]";
+ SG_ HVAC_CompTrq_Ft : 8|8@1+ (0.25,0) [0|63.75] "Nm" Vector__XXX
+CM_ SG_ 249 HVAC_CompTrq_Ft "HVAC_CompTrq_Ft";
+ SG_ EngFanRPM_Rq_HVAC : 16|8@1+ (1,0) [0|255] "%" Vector__XXX
+CM_ SG_ 249 EngFanRPM_Rq_HVAC "EngFanRPM_Rq_HVAC";
+ SG_ AirTemp_Outsd_HtMgt : 24|8@1+ (0.5,-40) [-40|87.5] "degC" Vector__XXX
+CM_ SG_ 249 AirTemp_Outsd_HtMgt "AirTemp_Outsd_HtMgt";
+ SG_ HtPwr_Ft_Rq : 32|8@1+ (1,0) [0|255] "%" Vector__XXX
+CM_ SG_ 249 HtPwr_Ft_Rq "HtPwr_Ft_Rq";
+ SG_ FrntGrllBlnd_Opn_Rq : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 249 FrntGrllBlnd_Opn_Rq "FrntGrllBlnd_Opn_Rq [source boolean]";
+ SG_ HVAC_Comp_MagClutch_On_Rq : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 249 HVAC_Comp_MagClutch_On_Rq "HVAC_Comp_MagClutch_On_Rq [source boolean]";
+ SG_ HVAC_CoolCirc_Actv : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 249 HVAC_CoolCirc_Actv "HVAC_CoolCirc_Actv [source boolean]";
+ SG_ MC_HVAC_RS1 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 249 MC_HVAC_RS1 "MC_HVAC_RS1";
+ SG_ CRC_HVAC_RS1 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 249 CRC_HVAC_RS1 "CRC_HVAC_RS1";
+
+BA_ "GenMsgCycleTime" BO_ 249 17;
+
+BO_ 260 TX_RQ_SBC: 8 ECM_1st_Group
+ SG_ GrMin_Rq_SBC : 5|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 260 GrMin_Rq_SBC "GrMin_Rq_SBC [source enum/value-table reference]";
+ SG_ GrMax_Rq_SBC : 2|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 260 GrMax_Rq_SBC "GrMax_Rq_SBC [source enum/value-table reference]";
+ SG_ GrMinMax_Rq_DTR : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 260 GrMinMax_Rq_DTR "GrMinMax_Rq_DTR [source boolean]";
+ SG_ ShftChrDsp_Rq_SBC : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 260 ShftChrDsp_Rq_SBC "ShftChrDsp_Rq_SBC [source enum/value-table reference]";
+ SG_ PwrFreeD_Supp_Rq_AS : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 260 PwrFreeD_Supp_Rq_AS "PwrFreeD_Supp_Rq_AS [source enum/value-table reference]";
+ SG_ ActvDnShift_Rq_SBC : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 260 ActvDnShift_Rq_SBC "ActvDnShift_Rq_SBC [source boolean]";
+ SG_ DynFLDS_Supp_Rq_SBC : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 260 DynFLDS_Supp_Rq_SBC "DynFLDS_Supp_Rq_SBC [source boolean]";
+ SG_ GrN_Rq_SBC : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 260 GrN_Rq_SBC "GrN_Rq_SBC [source enum/value-table reference]";
+ SG_ NoGrN_Rq : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 260 NoGrN_Rq "NoGrN_Rq [source boolean]";
+ SG_ TxRatioMin_Rq_SBC : 24|8@1+ (0.019999999553,0) [0|5.09999988601] "" Vector__XXX
+CM_ SG_ 260 TxRatioMin_Rq_SBC "TxRatioMin_Rq_SBC";
+ SG_ TxRatioMax_Rq_SBC : 32|8@1+ (0.019999999553,0) [0|5.09999988601] "" Vector__XXX
+CM_ SG_ 260 TxRatioMax_Rq_SBC "TxRatioMax_Rq_SBC";
+ SG_ MC_TX_RQ_SBC : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 260 MC_TX_RQ_SBC "MC_TX_RQ_SBC";
+ SG_ CRC_TX_RQ_SBC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 260 CRC_TX_RQ_SBC "CRC_TX_RQ_SBC";
+
+BA_ "GenMsgCycleTime" BO_ 260 13;
+
+BO_ 261 ENG_RS3_PT: 8 ECM_1st_Group
+ SG_ PreHt_Stat : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 261 PreHt_Stat "PreHt_Stat [source boolean]";
+ SG_ KickDnSw_Psd : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 261 KickDnSw_Psd "KickDnSw_Psd [source boolean]";
+ SG_ EngRPM : 2|14@1+ (1,0) [0|16383] "rpm" Vector__XXX
+CM_ SG_ 261 EngRPM "EngRPM";
+ SG_ EngTrqMaxCorrFctr : 16|8@1+ (0.00779527565464,0) [0|1.98779529193] "" Vector__XXX
+CM_ SG_ 261 EngTrqMaxCorrFctr "EngTrqMaxCorrFctr";
+ SG_ AccelPdlPosn : 24|8@1+ (0.40000000596,0) [0|102.00000152] "%" Vector__XXX
+CM_ SG_ 261 AccelPdlPosn "AccelPdlPosn";
+ SG_ AccelPdlPosn_Raw : 32|8@1+ (0.40000000596,0) [0|102.00000152] "%" Vector__XXX
+CM_ SG_ 261 AccelPdlPosn_Raw "AccelPdlPosn_Raw";
+ SG_ GenLoad : 42|6@1+ (3.22580647469,0) [0|203.225807905] "%" Vector__XXX
+CM_ SG_ 261 GenLoad "GenLoad";
+ SG_ AddPwrCnsmr_On_Rq : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 261 AddPwrCnsmr_On_Rq "AddPwrCnsmr_On_Rq [source boolean]";
+ SG_ Term61_Actv : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 261 Term61_Actv "Term61_Actv [source boolean]";
+ SG_ EngRun_Stat : 53|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 261 EngRun_Stat "EngRun_Stat [source enum/value-table reference]";
+ SG_ AccelPdlPosnSens_Flt : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 261 AccelPdlPosnSens_Flt "AccelPdlPosnSens_Flt [source boolean]";
+ SG_ MC_ENG_RS3_PT : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 261 MC_ENG_RS3_PT "MC_ENG_RS3_PT";
+ SG_ CRC_ENG_RS3_PT : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 261 CRC_ENG_RS3_PT "CRC_ENG_RS3_PT";
+
+BA_ "GenMsgCycleTime" BO_ 261 13;
+
+BO_ 327 ECM_STAT: 1 ECM_1st_Group
+ SG_ ECM_Rout_Stat : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 327 ECM_Rout_Stat "ECM_Rout_Stat [source enum/value-table reference]";
+
+BA_ "GenMsgCycleTime" BO_ 327 1;
+
+BO_ 331 ENG_RS2_PT: 8 ECM_1st_Group
+ SG_ EngTrqStatic : 3|13@1+ (0.25,-500) [-500|1547.75] "Nm" Vector__XXX
+CM_ SG_ 331 EngTrqStatic "EngTrqStatic";
+ SG_ EngTrqMaxETC : 19|13@1+ (0.25,-500) [-500|1547.75] "Nm" Vector__XXX
+CM_ SG_ 331 EngTrqMaxETC "EngTrqMaxETC";
+ SG_ PartOFC_Actv : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 331 PartOFC_Actv "PartOFC_Actv [source boolean]";
+ SG_ FullOFC_Actv : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 331 FullOFC_Actv "FullOFC_Actv [source boolean]";
+ SG_ EngTrqMinTTC : 35|13@1+ (0.25,-500) [-500|1547.75] "Nm" Vector__XXX
+CM_ SG_ 331 EngTrqMinTTC "EngTrqMinTTC";
+ SG_ MC_ENG_RS2_PT : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 331 MC_ENG_RS2_PT "MC_ENG_RS2_PT";
+ SG_ CRC_ENG_RS2_PT : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 331 CRC_ENG_RS2_PT "CRC_ENG_RS2_PT";
+
+BA_ "GenMsgCycleTime" BO_ 331 7;
+
+BO_ 381 TX_RQ_ECM: 8 ECM_1st_Group
+ SG_ GrMin_Rq_ECM : 5|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 381 GrMin_Rq_ECM "GrMin_Rq_ECM [source enum/value-table reference]";
+ SG_ GrMax_Rq_ECM : 2|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 381 GrMax_Rq_ECM "GrMax_Rq_ECM [source enum/value-table reference]";
+ SG_ ECM_TxShftPoint_Inc_Rq : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 381 ECM_TxShftPoint_Inc_Rq "ECM_TxShftPoint_Inc_Rq [source boolean]";
+ SG_ PwrFreeD_Dsabl_Rq : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 381 PwrFreeD_Dsabl_Rq "PwrFreeD_Dsabl_Rq [source boolean]";
+ SG_ ShftChrDsp_Rq : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 381 ShftChrDsp_Rq "ShftChrDsp_Rq [source enum/value-table reference]";
+ SG_ Gr1_Rq_ECM : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 381 Gr1_Rq_ECM "Gr1_Rq_ECM [source boolean]";
+ SG_ Creep_Off_Rq : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 381 Creep_Off_Rq "Creep_Off_Rq [source boolean]";
+ SG_ SSA_Sp_Warn : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 381 SSA_Sp_Warn "SSA_Sp_Warn [source boolean]";
+ SG_ SSA_EngSp : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 381 SSA_EngSp "SSA_EngSp [source boolean]";
+ SG_ SSA_Enbl_Rq_AS : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 381 SSA_Enbl_Rq_AS "SSA_Enbl_Rq_AS [source boolean]";
+ SG_ SSA_ECO_Sw_LED_On_Rq : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 381 SSA_ECO_Sw_LED_On_Rq "SSA_ECO_Sw_LED_On_Rq [source enum/value-table reference]";
+ SG_ TCC_Rq : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 381 TCC_Rq "TCC_Rq [source enum/value-table reference]";
+ SG_ TxSlpRPM_Rq_ECM : 34|14@1+ (1,0) [0|16383] "rpm" Vector__XXX
+CM_ SG_ 381 TxSlpRPM_Rq_ECM "TxSlpRPM_Rq_ECM";
+ SG_ EngRPM_Sens_LHOM : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 381 EngRPM_Sens_LHOM "EngRPM_Sens_LHOM [source boolean]";
+ SG_ EngExhstAfterTreat_Actv : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 381 EngExhstAfterTreat_Actv "EngExhstAfterTreat_Actv [source boolean]";
+ SG_ ECM_LHOM2 : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 381 ECM_LHOM2 "ECM_LHOM2 [source boolean]";
+ SG_ ECM_LHOM : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 381 ECM_LHOM "ECM_LHOM [source boolean]";
+ SG_ MC_TX_RQ_ECM : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 381 MC_TX_RQ_ECM "MC_TX_RQ_ECM";
+ SG_ CRC_TX_RQ_ECM : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 381 CRC_TX_RQ_ECM "CRC_TX_RQ_ECM";
+
+BA_ "GenMsgCycleTime" BO_ 381 19;
+
+BO_ 415 IC_A1: 8 ECM_1st_Group
+ SG_ Vprzr_DryVnTmr_Stat : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 415 Vprzr_DryVnTmr_Stat "Vprzr_DryVnTmr_Stat [source enum/value-table reference]";
+ SG_ VehSpd_Disp : 4|12@1+ (0.10000000149,0) [0|409.500006102] "km/h" Vector__XXX
+CM_ SG_ 415 VehSpd_Disp "VehSpd_Disp";
+ SG_ AirTemp_Outsd_Disp : 16|8@1+ (0.5,-40) [-40|87.5] "degC" Vector__XXX
+CM_ SG_ 415 AirTemp_Outsd_Disp "AirTemp_Outsd_Disp";
+ SG_ HiBm_Enbl : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 415 HiBm_Enbl "HiBm_Enbl [source enum/value-table reference]";
+ SG_ PTS_Disp_Stat_IC : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 415 PTS_Disp_Stat_IC "PTS_Disp_Stat_IC [source enum/value-table reference]";
+ SG_ EngShutOffTm : 28|12@1+ (1,0) [0|4095] "min" Vector__XXX
+CM_ SG_ 415 EngShutOffTm "EngShutOffTm";
+ SG_ Odo : 40|24@1+ (0.10000000149,0) [0|1677721.525] "km" Vector__XXX
+CM_ SG_ 415 Odo "Odo";
+
+BA_ "GenMsgCycleTime" BO_ 415 7;
+
+BO_ 445 SBW_RS_TCM: 8 ECM_1st_Group
+ SG_ StartLkSw : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 445 StartLkSw "StartLkSw [source boolean]";
+ SG_ SBW_MsgTxmtId : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 445 SBW_MsgTxmtId "SBW_MsgTxmtId [source enum/value-table reference]";
+ SG_ TSL_Posn_Rq : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 445 TSL_Posn_Rq "TSL_Posn_Rq [source enum/value-table reference]";
+ SG_ TxSelVlvPosn : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 445 TxSelVlvPosn "TxSelVlvPosn [source enum/value-table reference]";
+ SG_ TxSelSensPosn : 16|8@1+ (0.40000000596,0) [0|102.00000152] "%" Vector__XXX
+CM_ SG_ 445 TxSelSensPosn "TxSelSensPosn";
+ SG_ MC_SBW_RS_TCM : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 445 MC_SBW_RS_TCM "MC_SBW_RS_TCM";
+ SG_ CRC_SBW_RS_TCM : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 445 CRC_SBW_RS_TCM "CRC_SBW_RS_TCM";
+
+BA_ "GenMsgCycleTime" BO_ 445 7;
+
+BO_ 461 ENG_RS1_PT: 8 ECM_1st_Group
+ SG_ EngTrq_Enbl_Rq_AS : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 461 EngTrq_Enbl_Rq_AS "EngTrq_Enbl_Rq_AS [source boolean]";
+ SG_ CC_Encode_ECM : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 461 CC_Encode_ECM "CC_Encode_ECM [source boolean]";
+ SG_ EngTrqSel_D_TTC : 3|13@1+ (0.25,-500) [-500|1547.75] "Nm" Vector__XXX
+CM_ SG_ 461 EngTrqSel_D_TTC "EngTrqSel_D_TTC";
+ SG_ EngTrq_Enbl_Rq_SBC : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 461 EngTrq_Enbl_Rq_SBC "EngTrq_Enbl_Rq_SBC [source boolean]";
+ SG_ EngTrqAdjFast_Enbl : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 461 EngTrqAdjFast_Enbl "EngTrqAdjFast_Enbl [source boolean]";
+ SG_ EngTrqSel_AS_TTC : 19|13@1+ (0.25,-500) [-500|1547.75] "Nm" Vector__XXX
+CM_ SG_ 461 EngTrqSel_AS_TTC "EngTrqSel_AS_TTC";
+ SG_ EngTrq_Enbl_Rq_TCM : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 461 EngTrq_Enbl_Rq_TCM "EngTrq_Enbl_Rq_TCM [source boolean]";
+ SG_ EngTrq_Ack_ECM : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 461 EngTrq_Ack_ECM "EngTrq_Ack_ECM [source boolean]";
+ SG_ EngTrqSel_SBC_TTC : 35|13@1+ (0.25,-500) [-500|1547.75] "Nm" Vector__XXX
+CM_ SG_ 461 EngTrqSel_SBC_TTC "EngTrqSel_SBC_TTC";
+ SG_ MC_ENG_RS1_PT : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 461 MC_ENG_RS1_PT "MC_ENG_RS1_PT";
+ SG_ CRC_ENG_RS1_PT : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 461 CRC_ENG_RS1_PT "CRC_ENG_RS1_PT";
+
+BA_ "GenMsgCycleTime" BO_ 461 11;
+
+BO_ 467 ENG_RS4_PT: 8 ECM_1st_Group
+ SG_ DiffLk_M_LkTrq_Rq_ECM : 0|8@1+ (10,0) [0|2550] "Nm" Vector__XXX
+CM_ SG_ 467 DiffLk_M_LkTrq_Rq_ECM "DiffLk_M_LkTrq_Rq_ECM";
+ SG_ TxHybDrvMd_Rq_ECM : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 467 TxHybDrvMd_Rq_ECM "TxHybDrvMd_Rq_ECM [source enum/value-table reference]";
+ SG_ EM2_RPM_Rq_ECM : 12|12@1+ (4,0) [0|16380] "rpm" Vector__XXX
+CM_ SG_ 467 EM2_RPM_Rq_ECM "EM2_RPM_Rq_ECM";
+ SG_ EngTrq : 27|13@1+ (0.25,-500) [-500|1547.75] "Nm" Vector__XXX
+CM_ SG_ 467 EngTrq "EngTrq";
+ SG_ WDC_OutTrq_Rq_ECM : 40|8@1+ (2,0) [0|510] "Nm" Vector__XXX
+CM_ SG_ 467 WDC_OutTrq_Rq_ECM "WDC_OutTrq_Rq_ECM";
+ SG_ EM2_Md : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 467 EM2_Md "EM2_Md [source enum/value-table reference]";
+ SG_ MC_ENG_RS4_PT : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 467 MC_ENG_RS4_PT "MC_ENG_RS4_PT";
+ SG_ CRC_ENG_RS4_PT : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 467 CRC_ENG_RS4_PT "CRC_ENG_RS4_PT";
+
+BA_ "GenMsgCycleTime" BO_ 467 8;
+
+BO_ 512 DPM_STAT: 1 ECM_1st_Group
+ SG_ DPM_MdLmt_Rq : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 512 DPM_MdLmt_Rq "DPM_MdLmt_Rq [source enum/value-table reference]";
+ SG_ DPM_ExtMd_Enbl_Rq : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 512 DPM_ExtMd_Enbl_Rq "DPM_ExtMd_Enbl_Rq [source enum/value-table reference]";
+
+BA_ "GenMsgCycleTime" BO_ 512 2;
+
+BO_ 513 WHL_STAT1: 8 ECM_1st_Group
+ SG_ WhlPlsCnt_FL : 0|8@1+ (1,0) [0|255] "Impulses" Vector__XXX
+CM_ SG_ 513 WhlPlsCnt_FL "WhlPlsCnt_FL";
+ SG_ WhlPlsCnt_FR : 8|8@1+ (1,0) [0|255] "Impulses" Vector__XXX
+CM_ SG_ 513 WhlPlsCnt_FR "WhlPlsCnt_FR";
+ SG_ WhlPlsCnt_RL : 16|8@1+ (1,0) [0|255] "Impulses" Vector__XXX
+CM_ SG_ 513 WhlPlsCnt_RL "WhlPlsCnt_RL";
+ SG_ WhlPlsCnt_RR : 24|8@1+ (1,0) [0|255] "Impulses" Vector__XXX
+CM_ SG_ 513 WhlPlsCnt_RR "WhlPlsCnt_RR";
+ SG_ FTW_PressDropCnt : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 513 FTW_PressDropCnt "FTW_PressDropCnt";
+ SG_ StW_AnglOffset_ESP : 40|8@1+ (0.159999996424,-20.4799995422) [-20.4799995422|20.3199995458] "deg" Vector__XXX
+CM_ SG_ 513 StW_AnglOffset_ESP "StW_AnglOffset_ESP";
+ SG_ MC_WHL_STAT1 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 513 MC_WHL_STAT1 "MC_WHL_STAT1";
+ SG_ CRC_WHL_STAT1 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 513 CRC_WHL_STAT1 "CRC_WHL_STAT1";
+
+BA_ "GenMsgCycleTime" BO_ 513 8;
+
+BO_ 515 WHL_STAT2: 8 ECM_1st_Group
+ SG_ WhlDir_FL_Stat : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 515 WhlDir_FL_Stat "WhlDir_FL_Stat [source enum/value-table reference]";
+ SG_ WhlRPM_FL : 2|14@1+ (0.5,0) [0|8191.5] "rpm" Vector__XXX
+CM_ SG_ 515 WhlRPM_FL "WhlRPM_FL";
+ SG_ WhlDir_FR_Stat : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 515 WhlDir_FR_Stat "WhlDir_FR_Stat [source enum/value-table reference]";
+ SG_ WhlRPM_FR : 18|14@1+ (0.5,0) [0|8191.5] "rpm" Vector__XXX
+CM_ SG_ 515 WhlRPM_FR "WhlRPM_FR";
+ SG_ WhlDir_RL_Stat : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 515 WhlDir_RL_Stat "WhlDir_RL_Stat [source enum/value-table reference]";
+ SG_ WhlRPM_RL : 34|14@1+ (0.5,0) [0|8191.5] "rpm" Vector__XXX
+CM_ SG_ 515 WhlRPM_RL "WhlRPM_RL";
+ SG_ WhlDir_RR_Stat : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 515 WhlDir_RR_Stat "WhlDir_RR_Stat [source enum/value-table reference]";
+ SG_ WhlRPM_RR : 50|14@1+ (0.5,0) [0|8191.5] "rpm" Vector__XXX
+CM_ SG_ 515 WhlRPM_RR "WhlRPM_RR";
+
+BA_ "GenMsgCycleTime" BO_ 515 8;
+
+BO_ 516 VIN: 8 ECM_1st_Group
+ SG_ VIN_MsgPart : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 516 VIN_MsgPart "VIN_MsgPart [source enum/value-table reference]";
+ SG_ VIN_Data : 8|56@1+ (1,0) [0|7.20575940379e+16] "" Vector__XXX
+CM_ SG_ 516 VIN_Data "VIN_Data [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 516 2;
+
+BO_ 517 PN14_STAT: 8 ECM_1st_Group
+ SG_ PN14_BatCplSw_Stat : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 517 PN14_BatCplSw_Stat "PN14_BatCplSw_Stat [source enum/value-table reference]";
+ SG_ PN14_BackupBat_Flt : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 PN14_BackupBat_Flt "PN14_BackupBat_Flt [source boolean]";
+ SG_ PN14_RemPerm : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 PN14_RemPerm "PN14_RemPerm [source boolean]";
+ SG_ PN14_RevBltTns_Off_Rq : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 PN14_RevBltTns_Off_Rq "PN14_RevBltTns_Off_Rq [source boolean]";
+ SG_ PN14_SBC_Add_Off_Rq : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 PN14_SBC_Add_Off_Rq "PN14_SBC_Add_Off_Rq [source boolean]";
+ SG_ PN14_SPCR_AfterRun_Avl : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 PN14_SPCR_AfterRun_Avl "PN14_SPCR_AfterRun_Avl [source boolean]";
+ SG_ PN14_SupBat_Volt : 8|8@1+ (0.10000000149,0) [0|25.50000038] "V" Vector__XXX
+CM_ SG_ 517 PN14_SupBat_Volt "PN14_SupBat_Volt";
+ SG_ PN14_SupBatCutSw_Stat : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 517 PN14_SupBatCutSw_Stat "PN14_SupBatCutSw_Stat [source enum/value-table reference]";
+ SG_ PN14_GM1_Actv : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 PN14_GM1_Actv "PN14_GM1_Actv [source boolean]";
+ SG_ PN14_GM1_Avl : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 PN14_GM1_Avl "PN14_GM1_Avl [source boolean]";
+ SG_ PN14_SupBat_SOC_Lo : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 PN14_SupBat_SOC_Lo "PN14_SupBat_SOC_Lo [source boolean]";
+ SG_ PN14_AS_Off_Rq : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 517 PN14_AS_Off_Rq "PN14_AS_Off_Rq [source enum/value-table reference]";
+ SG_ SPCR_Flt_PN14 : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 517 SPCR_Flt_PN14 "SPCR_Flt_PN14 [source enum/value-table reference]";
+ SG_ PN14_LHC_Actv : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 PN14_LHC_Actv "PN14_LHC_Actv [source boolean]";
+ SG_ LHC_PTC6_Rq : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_PTC6_Rq "LHC_PTC6_Rq [source boolean]";
+ SG_ LHC_PTC5_Rq : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_PTC5_Rq "LHC_PTC5_Rq [source boolean]";
+ SG_ LHC_PTC4_Rq : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_PTC4_Rq "LHC_PTC4_Rq [source boolean]";
+ SG_ LHC_PTC3_Rq : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_PTC3_Rq "LHC_PTC3_Rq [source boolean]";
+ SG_ LHC_PTC2_Rq : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_PTC2_Rq "LHC_PTC2_Rq [source boolean]";
+ SG_ LHC_PTC1_Rq : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_PTC1_Rq "LHC_PTC1_Rq [source boolean]";
+ SG_ LHC_IntFan_R_50_Rq : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_IntFan_R_50_Rq "LHC_IntFan_R_50_Rq [source boolean]";
+ SG_ LHC_IntFan_F_50_Rq : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_IntFan_F_50_Rq "LHC_IntFan_F_50_Rq [source boolean]";
+ SG_ LHC_DSH_Stg2_Rq : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_DSH_Stg2_Rq "LHC_DSH_Stg2_Rq [source boolean]";
+ SG_ LHC_DSH_Stg1_Rq : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_DSH_Stg1_Rq "LHC_DSH_Stg1_Rq [source boolean]";
+ SG_ LHC_SeatHtStg3_Rq : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_SeatHtStg3_Rq "LHC_SeatHtStg3_Rq [source boolean]";
+ SG_ LHC_SeatHtStg2_Rq : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_SeatHtStg2_Rq "LHC_SeatHtStg2_Rq [source boolean]";
+ SG_ LHC_SeatHtStg1_Rq : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_SeatHtStg1_Rq "LHC_SeatHtStg1_Rq [source boolean]";
+ SG_ LHC_SeatVn_Rq : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_SeatVn_Rq "LHC_SeatVn_Rq [source boolean]";
+ SG_ LHC_Tlm_Rq : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_Tlm_Rq "LHC_Tlm_Rq [source boolean]";
+ SG_ LHC_TrlrSock_Rq : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_TrlrSock_Rq "LHC_TrlrSock_Rq [source boolean]";
+ SG_ LHC_WprPkHt_Rq : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_WprPkHt_Rq "LHC_WprPkHt_Rq [source boolean]";
+ SG_ LHC_EBL_Rq : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_EBL_Rq "LHC_EBL_Rq [source boolean]";
+ SG_ LHC_StW_Ht_Rq : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_StW_Ht_Rq "LHC_StW_Ht_Rq [source boolean]";
+ SG_ LHC_WShHt_Rq : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_WShHt_Rq "LHC_WShHt_Rq [source boolean]";
+ SG_ LHC_MirrHt_Rq : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_MirrHt_Rq "LHC_MirrHt_Rq [source boolean]";
+ SG_ LHC_CoolBox_R_Rq : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_CoolBox_R_Rq "LHC_CoolBox_R_Rq [source boolean]";
+ SG_ LHC_EngFan_50_Rq : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_EngFan_50_Rq "LHC_EngFan_50_Rq [source boolean]";
+ SG_ LHC_FogLmp_Ft_Rq : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_FogLmp_Ft_Rq "LHC_FogLmp_Ft_Rq [source boolean]";
+ SG_ LHC_TrkSock_Rq : 63|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_TrkSock_Rq "LHC_TrkSock_Rq [source boolean]";
+ SG_ LHC_ComfLmp_Rq : 62|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_ComfLmp_Rq "LHC_ComfLmp_Rq [source boolean]";
+ SG_ LHC_RHU_Rq : 61|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_RHU_Rq "LHC_RHU_Rq [source boolean]";
+ SG_ LHC_ICH_Rq : 60|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_ICH_Rq "LHC_ICH_Rq [source boolean]";
+ SG_ PN14_LHC_Taxi_Rq : 59|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 PN14_LHC_Taxi_Rq "PN14_LHC_Taxi_Rq [source boolean]";
+ SG_ LHC_IntFan_R_0_Rq : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 517 LHC_IntFan_R_0_Rq "LHC_IntFan_R_0_Rq [source boolean]";
+ SG_ PN14_TransMd_Stat : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 517 PN14_TransMd_Stat "PN14_TransMd_Stat [source enum/value-table reference]";
+
+BA_ "GenMsgCycleTime" BO_ 517 45;
+
+BO_ 519 CVI: 8 ECM_1st_Group
+ SG_ Group : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 519 Group "Group [source enum/value-table reference]";
+ SG_ Country : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 519 Country "Country [source enum/value-table reference]";
+ SG_ VehLine : 10|6@1+ (1,0) [0|63] "" Vector__XXX
+CM_ SG_ 519 VehLine "VehLine [source enum/value-table reference]";
+ SG_ Guard : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 519 Guard "Guard [source enum/value-table reference]";
+ SG_ VehLinePack : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 519 VehLinePack "VehLinePack [source enum/value-table reference]";
+ SG_ VehLineYear : 17|5@1+ (1,0) [0|31] "" Vector__XXX
+CM_ SG_ 519 VehLineYear "VehLineYear [source enum/value-table reference]";
+ SG_ VSTS_Avl : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 519 VSTS_Avl "VSTS_Avl [source boolean]";
+ SG_ BodyStyle : 27|5@1+ (1,0) [0|31] "" Vector__XXX
+CM_ SG_ 519 BodyStyle "BodyStyle [source enum/value-table reference]";
+ SG_ StStyle : 25|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 519 StStyle "StStyle [source enum/value-table reference]";
+ SG_ PSTS_Avl : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 519 PSTS_Avl "PSTS_Avl [source boolean]";
+ SG_ EngStyle : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 519 EngStyle "EngStyle [source enum/value-table reference]";
+ SG_ TCM_Avl : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 519 TCM_Avl "TCM_Avl [source boolean]";
+ SG_ HVAC_Avl : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 519 HVAC_Avl "HVAC_Avl [source boolean]";
+ SG_ TrlrHtch_Avl : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 519 TrlrHtch_Avl "TrlrHtch_Avl [source boolean]";
+ SG_ VTA_Avl : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 519 VTA_Avl "VTA_Avl [source boolean]";
+ SG_ PCD_Avl : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 519 PCD_Avl "PCD_Avl [source boolean]";
+ SG_ ICH_Avl : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 519 ICH_Avl "ICH_Avl [source boolean]";
+ SG_ LgtSens_Avl : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 519 LgtSens_Avl "LgtSens_Avl [source boolean]";
+ SG_ RainSens_Avl : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 519 RainSens_Avl "RainSens_Avl [source boolean]";
+ SG_ HVACStyle : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 519 HVACStyle "HVACStyle [source enum/value-table reference]";
+ SG_ VehOPTPack : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 519 VehOPTPack "VehOPTPack [source enum/value-table reference]";
+ SG_ Cplt_SL_Enbl : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 519 Cplt_SL_Enbl "Cplt_SL_Enbl [source boolean]";
+ SG_ RoofStyle : 48|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 519 RoofStyle "RoofStyle [source enum/value-table reference]";
+ SG_ CRC_CVI : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 519 CRC_CVI "CRC_CVI";
+
+BA_ "GenMsgCycleTime" BO_ 519 24;
+
+BO_ 520 AVI2: 8 ECM_1st_Group
+ SG_ MirrFld_Avl : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 MirrFld_Avl "MirrFld_Avl [source boolean]";
+ SG_ Presf_Avl : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 Presf_Avl "Presf_Avl [source boolean]";
+ SG_ TELEAID_Avl : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 TELEAID_Avl "TELEAID_Avl [source boolean]";
+ SG_ PddlLmp_Avl : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 PddlLmp_Avl "PddlLmp_Avl [source boolean]";
+ SG_ WarnLmp_Avl : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 WarnLmp_Avl "WarnLmp_Avl [source boolean]";
+ SG_ EntrLmp_Avl : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 EntrLmp_Avl "EntrLmp_Avl [source boolean]";
+ SG_ Win_R_PartOpn : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 Win_R_PartOpn "Win_R_PartOpn [source boolean]";
+ SG_ ADC_Avl : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 ADC_Avl "ADC_Avl [source boolean]";
+ SG_ WinStyle : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 520 WinStyle "WinStyle [source enum/value-table reference]";
+ SG_ SpecVehPW_FL_Avl : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 SpecVehPW_FL_Avl "SpecVehPW_FL_Avl [source boolean]";
+ SG_ SpecVehPW_FR_Avl : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 SpecVehPW_FR_Avl "SpecVehPW_FR_Avl [source boolean]";
+ SG_ SpecVehPW_RL_Avl : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 SpecVehPW_RL_Avl "SpecVehPW_RL_Avl [source boolean]";
+ SG_ SpecVehPW_RR_Avl : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 SpecVehPW_RR_Avl "SpecVehPW_RR_Avl [source boolean]";
+ SG_ Mem_P_Avl : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 Mem_P_Avl "Mem_P_Avl [source boolean]";
+ SG_ MPM_Avl : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 MPM_Avl "MPM_Avl [source boolean]";
+ SG_ AmbLgt_Avl : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 AmbLgt_Avl "AmbLgt_Avl [source boolean]";
+ SG_ SeatHt_R_Avl : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 SeatHt_R_Avl "SeatHt_R_Avl [source boolean]";
+ SG_ RoofLmpSup_PrmntActv : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 RoofLmpSup_PrmntActv "RoofLmpSup_PrmntActv [source boolean]";
+ SG_ SPCR_Style : 19|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 520 SPCR_Style "SPCR_Style [source enum/value-table reference]";
+ SG_ LDP_Avl : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 LDP_Avl "LDP_Avl [source boolean]";
+ SG_ LCMS_Avl : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 LCMS_Avl "LCMS_Avl [source boolean]";
+ SG_ DTR_PlusLgt_Avl : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 DTR_PlusLgt_Avl "DTR_PlusLgt_Avl [source boolean]";
+ SG_ EM_Style : 26|6@1+ (1,0) [0|63] "" Vector__XXX
+CM_ SG_ 520 EM_Style "EM_Style [source enum/value-table reference]";
+ SG_ IL_Pckt876_Avl : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 IL_Pckt876_Avl "IL_Pckt876_Avl [source boolean]";
+ SG_ SSA_Avl : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 SSA_Avl "SSA_Avl [source boolean]";
+ SG_ ABC_Avl : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 ABC_Avl "ABC_Avl [source boolean]";
+ SG_ DualView_Avl : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 DualView_Avl "DualView_Avl [source boolean]";
+ SG_ ExtLgtPack_Avl : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 ExtLgtPack_Avl "ExtLgtPack_Avl [source boolean]";
+ SG_ ExtLgtPack_FogLmp_Avl : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 ExtLgtPack_FogLmp_Avl "ExtLgtPack_FogLmp_Avl [source boolean]";
+ SG_ TCASE_Avl : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 TCASE_Avl "TCASE_Avl [source boolean]";
+ SG_ DiffLk_F_Avl : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 DiffLk_F_Avl "DiffLk_F_Avl [source boolean]";
+ SG_ DiffLk_M_Avl : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 DiffLk_M_Avl "DiffLk_M_Avl [source boolean]";
+ SG_ DiffLk_R_Avl : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 DiffLk_R_Avl "DiffLk_R_Avl [source boolean]";
+ SG_ PS_Style : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 520 PS_Style "PS_Style [source enum/value-table reference]";
+ SG_ STA_Avl : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 STA_Avl "STA_Avl [source boolean]";
+ SG_ FW_Avl : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 FW_Avl "FW_Avl [source boolean]";
+ SG_ AmbLgt_BiCol_Avl : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 AmbLgt_BiCol_Avl "AmbLgt_BiCol_Avl [source boolean]";
+ SG_ ASP_Avl : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 ASP_Avl "ASP_Avl [source boolean]";
+ SG_ HPP_Avl : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 HPP_Avl "HPP_Avl [source boolean]";
+ SG_ ARS_Avl : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 ARS_Avl "ARS_Avl [source boolean]";
+ SG_ DSR_Avl : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 520 DSR_Avl "DSR_Avl [source boolean]";
+ SG_ CRC_AVI2 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 520 CRC_AVI2 "CRC_AVI2";
+
+BA_ "GenMsgCycleTime" BO_ 520 42;
+
+BO_ 564 TCASE_DIFFLK_STAT: 8 ECM_1st_Group
+ SG_ Gr_TCASE : 5|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 564 Gr_TCASE "Gr_TCASE [source enum/value-table reference]";
+ SG_ TCASE_Shift_Abort : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 564 TCASE_Shift_Abort "TCASE_Shift_Abort [source boolean]";
+ SG_ TCASE_Shift_Imposbl : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 564 TCASE_Shift_Imposbl "TCASE_Shift_Imposbl [source boolean]";
+ SG_ GrN_Rq_TCASE : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 564 GrN_Rq_TCASE "GrN_Rq_TCASE [source enum/value-table reference]";
+ SG_ TCASE_Ovrht : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 564 TCASE_Ovrht "TCASE_Ovrht [source boolean]";
+ SG_ TCASE_ECU_Flt : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 564 TCASE_ECU_Flt "TCASE_ECU_Flt [source boolean]";
+ SG_ DiffLk_F_Md : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 564 DiffLk_F_Md "DiffLk_F_Md [source enum/value-table reference]";
+ SG_ DiffLk_M_Md : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 564 DiffLk_M_Md "DiffLk_M_Md [source enum/value-table reference]";
+ SG_ DiffLk_R_Md : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 564 DiffLk_R_Md "DiffLk_R_Md [source enum/value-table reference]";
+ SG_ DiffLk_F_LkTrq : 24|8@1+ (10,0) [0|2550] "Nm" Vector__XXX
+CM_ SG_ 564 DiffLk_F_LkTrq "DiffLk_F_LkTrq";
+ SG_ DiffLk_M_LkTrq : 32|8@1+ (10,0) [0|2550] "Nm" Vector__XXX
+CM_ SG_ 564 DiffLk_M_LkTrq "DiffLk_M_LkTrq";
+ SG_ DiffLk_R_LkTrq : 40|8@1+ (10,0) [0|2550] "Nm" Vector__XXX
+CM_ SG_ 564 DiffLk_R_LkTrq "DiffLk_R_LkTrq";
+ SG_ MC_TCASE_DIFFLK_STAT : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 564 MC_TCASE_DIFFLK_STAT "MC_TCASE_DIFFLK_STAT";
+ SG_ CRC_TCASE_DIFFLK_STAT : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 564 CRC_TCASE_DIFFLK_STAT "CRC_TCASE_DIFFLK_STAT";
+
+BA_ "GenMsgCycleTime" BO_ 564 14;
+
+BO_ 566 DIFFLK_RQ_ESP: 8 ECM_1st_Group
+ SG_ DiffLk_F_Md_Rq_ESP : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 566 DiffLk_F_Md_Rq_ESP "DiffLk_F_Md_Rq_ESP [source enum/value-table reference]";
+ SG_ DiffLk_M_Md_Rq_ESP : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 566 DiffLk_M_Md_Rq_ESP "DiffLk_M_Md_Rq_ESP [source enum/value-table reference]";
+ SG_ DiffLk_R_Md_Rq_ESP : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 566 DiffLk_R_Md_Rq_ESP "DiffLk_R_Md_Rq_ESP [source enum/value-table reference]";
+ SG_ DiffLk_F_LkTrq_Rq_ESP : 8|8@1+ (10,0) [0|2550] "Nm" Vector__XXX
+CM_ SG_ 566 DiffLk_F_LkTrq_Rq_ESP "DiffLk_F_LkTrq_Rq_ESP";
+ SG_ DiffLk_M_LkTrq_Rq_ESP : 16|8@1+ (10,0) [0|2550] "Nm" Vector__XXX
+CM_ SG_ 566 DiffLk_M_LkTrq_Rq_ESP "DiffLk_M_LkTrq_Rq_ESP";
+ SG_ DiffLk_R_LkTrq_Rq_ESP : 24|8@1+ (10,0) [0|2550] "Nm" Vector__XXX
+CM_ SG_ 566 DiffLk_R_LkTrq_Rq_ESP "DiffLk_R_LkTrq_Rq_ESP";
+ SG_ MC_DIFFLK_RQ_ESP : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 566 MC_DIFFLK_RQ_ESP "MC_DIFFLK_RQ_ESP";
+ SG_ CRC_DIFFLK_RQ_ESP : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 566 CRC_DIFFLK_RQ_ESP "CRC_DIFFLK_RQ_ESP";
+
+BA_ "GenMsgCycleTime" BO_ 566 8;
+
+BO_ 581 VEH_DYN_STAT: 8 ECM_1st_Group
+ SG_ VehYawRate_Raw : 0|16@1+ (0.00999999977648,-327.679992676) [-327.679992676|327.669992676] "deg/s" Vector__XXX
+CM_ SG_ 581 VehYawRate_Raw "VehYawRate_Raw";
+ SG_ VehYawRateOffset : 16|8@1+ (0.0799999982119,-10.2399997711) [-10.2399997711|10.1599997729] "deg/s" Vector__XXX
+CM_ SG_ 581 VehYawRateOffset "VehYawRateOffset";
+ SG_ VehAccel_X_Offset : 24|8@1+ (0.019999999553,-2.55999994278) [-2.55999994278|2.53999994323] "m/s2" Vector__XXX
+CM_ SG_ 581 VehAccel_X_Offset "VehAccel_X_Offset";
+ SG_ VehAccel_X : 32|8@1+ (0.0799999982119,-10.2399997711) [-10.2399997711|10.1599997729] "m/s2" Vector__XXX
+CM_ SG_ 581 VehAccel_X "VehAccel_X";
+ SG_ VehAccel_Y : 40|8@1+ (0.0799999982119,-10.2399997711) [-10.2399997711|10.1599997729] "m/s2" Vector__XXX
+CM_ SG_ 581 VehAccel_Y "VehAccel_Y";
+ SG_ MC_VEH_DYN_STAT : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 581 MC_VEH_DYN_STAT "MC_VEH_DYN_STAT";
+ SG_ VehAccel_Y_Offset : 56|8@1+ (0.019999999553,-2.55999994278) [-2.55999994278|2.53999994323] "m/s2" Vector__XXX
+CM_ SG_ 581 VehAccel_Y_Offset "VehAccel_Y_Offset";
+
+BA_ "GenMsgCycleTime" BO_ 581 7;
+
+BO_ 590 HPP_SW_STAT: 2 ECM_1st_Group
+ SG_ HPP_Sw_Dir : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 590 HPP_Sw_Dir "HPP_Sw_Dir [source enum/value-table reference]";
+ SG_ HPP_Sw_Inc : 11|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 590 HPP_Sw_Inc "HPP_Sw_Inc";
+
+BA_ "GenMsgCycleTime" BO_ 590 2;
+
+BO_ 591 HPP_STAT: 2 ECM_1st_Group
+ SG_ HPP_DrvProg_Rq : 5|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 591 HPP_DrvProg_Rq "HPP_DrvProg_Rq [source enum/value-table reference]";
+ SG_ HPP_DrvProg_LED_Rq : 1|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 591 HPP_DrvProg_LED_Rq "HPP_DrvProg_LED_Rq [source enum/value-table reference]";
+ SG_ HPP_DrvProg_Disp_Rq : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 591 HPP_DrvProg_Disp_Rq "HPP_DrvProg_Disp_Rq [source enum/value-table reference]";
+ SG_ HPP_Disp_TrgRq_TCM : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 591 HPP_Disp_TrgRq_TCM "HPP_Disp_TrgRq_TCM [source enum/value-table reference]";
+ SG_ HPP_Msg1_Disp_Rq : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 591 HPP_Msg1_Disp_Rq "HPP_Msg1_Disp_Rq [source boolean]";
+ SG_ HPP_Msg2_Disp_Rq : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 591 HPP_Msg2_Disp_Rq "HPP_Msg2_Disp_Rq [source boolean]";
+
+BA_ "GenMsgCycleTime" BO_ 591 6;
+
+BO_ 643 BODY_R1: 8 ECM_1st_Group
+ SG_ DrRLtch_FL_Stat : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 643 DrRLtch_FL_Stat "DrRLtch_FL_Stat [source enum/value-table reference]";
+ SG_ DrRLtch_FR_Stat : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 643 DrRLtch_FR_Stat "DrRLtch_FR_Stat [source enum/value-table reference]";
+ SG_ DrRLtch_RL_Stat : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 643 DrRLtch_RL_Stat "DrRLtch_RL_Stat [source enum/value-table reference]";
+ SG_ DrRLtch_RR_Stat : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 643 DrRLtch_RR_Stat "DrRLtch_RR_Stat [source enum/value-table reference]";
+ SG_ DL_RLtch_Stat : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 643 DL_RLtch_Stat "DL_RLtch_Stat [source enum/value-table reference]";
+ SG_ EngHd_Stat : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 643 EngHd_Stat "EngHd_Stat [source enum/value-table reference]";
+ SG_ ICH_HtVn_Actv : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 643 ICH_HtVn_Actv "ICH_HtVn_Actv [source boolean]";
+ SG_ VTA_Alm_Actv : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 643 VTA_Alm_Actv "VTA_Alm_Actv [source boolean]";
+ SG_ EF_On_Rq : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 643 EF_On_Rq "EF_On_Rq [source enum/value-table reference]";
+ SG_ LgtSens_Twlgt : 21|3@1+ (1,0) [0|7] "Steps" Vector__XXX
+CM_ SG_ 643 LgtSens_Twlgt "LgtSens_Twlgt";
+ SG_ LgtSens_SNA : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 643 LgtSens_SNA "LgtSens_SNA [source boolean]";
+ SG_ LgtSens_Tunnel : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 643 LgtSens_Tunnel "LgtSens_Tunnel [source boolean]";
+ SG_ LgtSens_Flt : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 643 LgtSens_Flt "LgtSens_Flt [source boolean]";
+ SG_ LgtSens_Night : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 643 LgtSens_Night "LgtSens_Night [source boolean]";
+ SG_ ADL_LoBm_On_Rq : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 643 ADL_LoBm_On_Rq "ADL_LoBm_On_Rq [source boolean]";
+ SG_ Trlr_Stat : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 643 Trlr_Stat "Trlr_Stat [source enum/value-table reference]";
+ SG_ Hrn_On : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 643 Hrn_On "Hrn_On [source boolean]";
+ SG_ Term54_Actv : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 643 Term54_Actv "Term54_Actv [source boolean]";
+ SG_ MPkBrk_Stat : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 643 MPkBrk_Stat "MPkBrk_Stat [source boolean]";
+ SG_ WprOutsdPkPosn : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 643 WprOutsdPkPosn "WprOutsdPkPosn [source boolean]";
+ SG_ Tire_LHOM : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 643 Tire_LHOM "Tire_LHOM [source boolean]";
+ SG_ LoBm_On_Rq : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 643 LoBm_On_Rq "LoBm_On_Rq [source boolean]";
+ SG_ HiBm_On : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 643 HiBm_On "HiBm_On [source boolean]";
+ SG_ IrLmp_D_Lt_Flt : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 643 IrLmp_D_Lt_Flt "IrLmp_D_Lt_Flt [source boolean]";
+ SG_ IrLmp_P_Rt_Flt : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 643 IrLmp_P_Rt_Flt "IrLmp_P_Rt_Flt [source boolean]";
+ SG_ LoBm_D_Lt_Flt : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 643 LoBm_D_Lt_Flt "LoBm_D_Lt_Flt [source boolean]";
+ SG_ LoBm_P_Rt_Flt : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 643 LoBm_P_Rt_Flt "LoBm_P_Rt_Flt [source boolean]";
+ SG_ RevGr_Engg : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 643 RevGr_Engg "RevGr_Engg [source enum/value-table reference]";
+ SG_ AirTemp_Insd : 40|8@1+ (0.25,0) [0|63.75] "degC" Vector__XXX
+CM_ SG_ 643 AirTemp_Insd "AirTemp_Insd";
+ SG_ Bckl_Sw_RL_Stat_SAM_R : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 643 Bckl_Sw_RL_Stat_SAM_R "Bckl_Sw_RL_Stat_SAM_R [source enum/value-table reference]";
+ SG_ Bckl_Sw_RR_Stat_SAM_R : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 643 Bckl_Sw_RR_Stat_SAM_R "Bckl_Sw_RR_Stat_SAM_R [source enum/value-table reference]";
+ SG_ Bckl_Sw_RM_Stat_SAM_R : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 643 Bckl_Sw_RM_Stat_SAM_R "Bckl_Sw_RM_Stat_SAM_R [source enum/value-table reference]";
+ SG_ StW_Cond_Stat : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 643 StW_Cond_Stat "StW_Cond_Stat [source enum/value-table reference]";
+ SG_ AirTemp_Outsd : 56|8@1+ (1,0) [0|255] "degC" Vector__XXX
+CM_ SG_ 643 AirTemp_Outsd "AirTemp_Outsd [source enum/value-table reference]";
+
+BA_ "GenMsgCycleTime" BO_ 643 34;
+
+BO_ 738 TCM_A2: 8 ECM_1st_Group
+ SG_ CurrDtyCyc_Rq : 0|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+CM_ SG_ 738 CurrDtyCyc_Rq "CurrDtyCyc_Rq";
+ SG_ TxTurbineRPM : 18|14@1+ (1,0) [0|16383] "rpm" Vector__XXX
+CM_ SG_ 738 TxTurbineRPM "TxTurbineRPM";
+ SG_ MIL_On_Rq_TCM : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 738 MIL_On_Rq_TCM "MIL_On_Rq_TCM [source boolean]";
+ SG_ TxSlpRPM_Dsr : 34|14@1+ (1,0) [0|16383] "rpm" Vector__XXX
+CM_ SG_ 738 TxSlpRPM_Dsr "TxSlpRPM_Dsr";
+ SG_ TCM_Data : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 738 TCM_Data "TCM_Data";
+ SG_ TCM_CALID_CVN_ErrNum : 59|5@1+ (1,0) [0|31] "" Vector__XXX
+CM_ SG_ 738 TCM_CALID_CVN_ErrNum "TCM_CALID_CVN_ErrNum";
+ SG_ TCM_CALID_CVN_Actv : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 738 TCM_CALID_CVN_Actv "TCM_CALID_CVN_Actv [source boolean]";
+ SG_ TCM_ErrChk_Stat : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 738 TCM_ErrChk_Stat "TCM_ErrChk_Stat [source enum/value-table reference]";
+
+BA_ "GenMsgCycleTime" BO_ 738 8;
+
+BO_ 741 FSCM_STAT: 6 ECM_1st_Group
+ SG_ FuelPress : 0|8@1+ (0.0500000007451,0) [0|12.75000019] "bar" Vector__XXX
+CM_ SG_ 741 FuelPress "FuelPress";
+ SG_ FuelPmpDtyCyc : 8|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+CM_ SG_ 741 FuelPmpDtyCyc "FuelPmpDtyCyc";
+ SG_ FuelPmp_Stat_V2 : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 741 FuelPmp_Stat_V2 "FuelPmp_Stat_V2 [source enum/value-table reference]";
+ SG_ FuelPressSens_Stat_V2 : 19|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 741 FuelPressSens_Stat_V2 "FuelPressSens_Stat_V2 [source enum/value-table reference]";
+ SG_ FuelPress_IncHydrRst : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 741 FuelPress_IncHydrRst "FuelPress_IncHydrRst [source boolean]";
+ SG_ FuelPress_Rq_NA : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 741 FuelPress_Rq_NA "FuelPress_Rq_NA [source boolean]";
+ SG_ FuelPmp1_InDtyCyc : 32|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+CM_ SG_ 741 FuelPmp1_InDtyCyc "FuelPmp1_InDtyCyc";
+ SG_ FSCM_Stat_AMG : 45|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 741 FSCM_Stat_AMG "FSCM_Stat_AMG [source enum/value-table reference]";
+ SG_ MX_FSCM_STAT : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 741 MX_FSCM_STAT "MX_FSCM_STAT [source boolean]";
+
+BA_ "GenMsgCycleTime" BO_ 741 9;
+
+BO_ 742 FSCM2_STAT: 6 ECM_1st_Group
+ SG_ FuelPress2 : 0|8@1+ (0.0500000007451,0) [0|12.75000019] "bar" Vector__XXX
+CM_ SG_ 742 FuelPress2 "FuelPress2";
+ SG_ FuelPmp2_DtyCyc : 8|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+CM_ SG_ 742 FuelPmp2_DtyCyc "FuelPmp2_DtyCyc";
+ SG_ FuelPmp2_Stat : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 742 FuelPmp2_Stat "FuelPmp2_Stat [source enum/value-table reference]";
+ SG_ FuelPressSens2_Stat : 19|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 742 FuelPressSens2_Stat "FuelPressSens2_Stat [source enum/value-table reference]";
+ SG_ FuelPress2_IncHydrRst : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 742 FuelPress2_IncHydrRst "FuelPress2_IncHydrRst [source boolean]";
+ SG_ FuelPress2_Rq_NA : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 742 FuelPress2_Rq_NA "FuelPress2_Rq_NA [source boolean]";
+ SG_ FuelPmp2_InDtyCyc : 32|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+CM_ SG_ 742 FuelPmp2_InDtyCyc "FuelPmp2_InDtyCyc";
+ SG_ FSCM2_Stat_AMG : 45|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 742 FSCM2_Stat_AMG "FSCM2_Stat_AMG [source enum/value-table reference]";
+
+BA_ "GenMsgCycleTime" BO_ 742 8;
+
+BO_ 747 DAC_TCM: 8 ECM_1st_Group
+ SG_ DAC_TCM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 747 DAC_TCM "DAC_TCM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 747 1;
+
+BO_ 752 TCM_DAC: 8 ECM_1st_Group
+ SG_ TCM_DAC : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 752 TCM_DAC "TCM_DAC [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 752 1;
+
+BO_ 753 TCM_A1: 8 ECM_1st_Group
+ SG_ TxOilTemp : 0|8@1+ (1,-50) [-50|205] "degC" Vector__XXX
+CM_ SG_ 753 TxOilTemp "TxOilTemp";
+ SG_ TxTemp_Excess : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 753 TxTemp_Excess "TxTemp_Excess [source boolean]";
+ SG_ DrvRst_Hi : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 753 DrvRst_Hi "DrvRst_Hi [source boolean]";
+ SG_ BasShftProg_Ok : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 753 BasShftProg_Ok "BasShftProg_Ok [source boolean]";
+ SG_ TCM_LHOM : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 753 TCM_LHOM "TCM_LHOM [source boolean]";
+ SG_ Clutch_Stat : 9|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 753 Clutch_Stat "Clutch_Stat [source enum/value-table reference]";
+ SG_ TCC_NoLoad : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 753 TCC_NoLoad "TCC_NoLoad [source boolean]";
+ SG_ VehDrvProg_TCM_V2 : 21|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 753 VehDrvProg_TCM_V2 "VehDrvProg_TCM_V2 [source enum/value-table reference]";
+ SG_ TxDrvProgMan_Actv : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 753 TxDrvProgMan_Actv "TxDrvProgMan_Actv [source boolean]";
+ SG_ TSL_Posn_TCM : 17|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 753 TSL_Posn_TCM "TSL_Posn_TCM [source enum/value-table reference]";
+ SG_ TxOffRd_Actv : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 753 TxOffRd_Actv "TxOffRd_Actv [source boolean]";
+ SG_ StBrk_Rq_TCM : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 753 StBrk_Rq_TCM "StBrk_Rq_TCM [source boolean]";
+ SG_ TxDrvTrqAbsVal : 32|16@1+ (1,0) [0|65535] "Nm" Vector__XXX
+CM_ SG_ 753 TxDrvTrqAbsVal "TxDrvTrqAbsVal";
+ SG_ TxOutRPM : 50|14@1+ (1,0) [0|16383] "rpm" Vector__XXX
+CM_ SG_ 753 TxOutRPM "TxOutRPM";
+
+BA_ "GenMsgCycleTime" BO_ 753 14;
+
+BO_ 755 TCM_DISP_RQ: 7 ECM_1st_Group
+ SG_ TxDrvPosn_Disp_Rq_TCM : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 755 TxDrvPosn_Disp_Rq_TCM "TxDrvPosn_Disp_Rq_TCM [source enum/value-table reference]";
+ SG_ TxDrvProg_Disp_Rq_TCM : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 755 TxDrvProg_Disp_Rq_TCM "TxDrvProg_Disp_Rq_TCM [source enum/value-table reference]";
+ SG_ SBW_Msg_Disp_Rq_TCM : 21|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 755 SBW_Msg_Disp_Rq_TCM "SBW_Msg_Disp_Rq_TCM [source enum/value-table reference]";
+ SG_ TxShiftRcmmnd_Disp_Rq_TCM : 17|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 755 TxShiftRcmmnd_Disp_Rq_TCM "TxShiftRcmmnd_Disp_Rq_TCM [source enum/value-table reference]";
+ SG_ SBW_Beep_Rq_TCM : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 755 SBW_Beep_Rq_TCM "SBW_Beep_Rq_TCM [source boolean]";
+ SG_ TSL_MtnLk1_Disp_Rq_TCM : 28|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 755 TSL_MtnLk1_Disp_Rq_TCM "TSL_MtnLk1_Disp_Rq_TCM [source enum/value-table reference]";
+ SG_ TSL_MtnLk2_Disp_Rq_TCM : 24|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 755 TSL_MtnLk2_Disp_Rq_TCM "TSL_MtnLk2_Disp_Rq_TCM [source enum/value-table reference]";
+ SG_ TSL_MtnLk3_Disp_Rq_TCM : 36|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 755 TSL_MtnLk3_Disp_Rq_TCM "TSL_MtnLk3_Disp_Rq_TCM [source enum/value-table reference]";
+ SG_ TSL_MtnLk4_Disp_Rq_TCM : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 755 TSL_MtnLk4_Disp_Rq_TCM "TSL_MtnLk4_Disp_Rq_TCM [source enum/value-table reference]";
+ SG_ Gr_Target_Disp_Rq : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 755 Gr_Target_Disp_Rq "Gr_Target_Disp_Rq [source enum/value-table reference]";
+ SG_ RaceStMd_Disp_Rq_AMG : 48|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 755 RaceStMd_Disp_Rq_AMG "RaceStMd_Disp_Rq_AMG [source enum/value-table reference]";
+
+BA_ "GenMsgCycleTime" BO_ 755 10;
+
+BO_ 757 ISM_DISP_RQ: 5 ECM_1st_Group
+ SG_ TxDrvPosn_Disp_Rq_ISM : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 757 TxDrvPosn_Disp_Rq_ISM "TxDrvPosn_Disp_Rq_ISM [source enum/value-table reference]";
+ SG_ SBW_Msg_Disp_Rq_ISM : 21|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 757 SBW_Msg_Disp_Rq_ISM "SBW_Msg_Disp_Rq_ISM [source enum/value-table reference]";
+ SG_ SBW_Beep_Rq_ISM : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 757 SBW_Beep_Rq_ISM "SBW_Beep_Rq_ISM [source boolean]";
+ SG_ TSL_MtnLk1_Disp_Rq_ISM : 28|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 757 TSL_MtnLk1_Disp_Rq_ISM "TSL_MtnLk1_Disp_Rq_ISM [source enum/value-table reference]";
+ SG_ TSL_MtnLk2_Disp_Rq_ISM : 24|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 757 TSL_MtnLk2_Disp_Rq_ISM "TSL_MtnLk2_Disp_Rq_ISM [source enum/value-table reference]";
+ SG_ TSL_MtnLk3_Disp_Rq_ISM : 36|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 757 TSL_MtnLk3_Disp_Rq_ISM "TSL_MtnLk3_Disp_Rq_ISM [source enum/value-table reference]";
+ SG_ TSL_MtnLk4_Disp_Rq_ISM : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 757 TSL_MtnLk4_Disp_Rq_ISM "TSL_MtnLk4_Disp_Rq_ISM [source enum/value-table reference]";
+
+BA_ "GenMsgCycleTime" BO_ 757 7;
+
+BO_ 758 ISM_DAC: 8 ECM_1st_Group
+ SG_ ISM_DAC : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 758 ISM_DAC "ISM_DAC [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 758 1;
+
+BO_ 759 SG_A1: 7 ECM_1st_Group
+ SG_ SG_OutDC_Curr : 0|16@1+ (0.10000000149,-3276.60009766) [-3276.60009766|3276.9] "A" Vector__XXX
+CM_ SG_ 759 SG_OutDC_Curr "SG_OutDC_Curr";
+ SG_ SG_OutDC_Volt : 16|16@1+ (0.10000000149,0) [0|6553.50009765] "V" Vector__XXX
+CM_ SG_ 759 SG_OutDC_Volt "SG_OutDC_Volt";
+ SG_ EM1_Diag_Stat : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 759 EM1_Diag_Stat "EM1_Diag_Stat [source enum/value-table reference]";
+
+BA_ "GenMsgCycleTime" BO_ 759 3;
+
+BO_ 766 DAC_ISM: 8 ECM_1st_Group
+ SG_ DAC_ISM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 766 DAC_ISM "DAC_ISM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 766 1;
+
+BO_ 781 ECM_A1: 8 ECM_1st_Group
+ SG_ EngCoolTemp : 0|8@1+ (1,-40) [-40|215] "degC" Vector__XXX
+CM_ SG_ 781 EngCoolTemp "EngCoolTemp";
+ SG_ IntkAirTemp : 8|8@1+ (1,-40) [-40|215] "degC" Vector__XXX
+CM_ SG_ 781 IntkAirTemp "IntkAirTemp";
+ SG_ EngOilTemp : 16|8@1+ (1,-40) [-40|215] "degC" Vector__XXX
+CM_ SG_ 781 EngOilTemp "EngOilTemp";
+ SG_ EngOilLvl : 24|8@1+ (0.314960628748,0) [0|80.3149603307] "mm" Vector__XXX
+CM_ SG_ 781 EngOilLvl "EngOilLvl";
+ SG_ EngOilQual : 32|8@1+ (0.0196850392967,1) [1|6.01968502067] "" Vector__XXX
+CM_ SG_ 781 EngOilQual "EngOilQual";
+ SG_ FuelCons : 40|16@1+ (0.216681420803,0) [0|14200.2169123] "l/250ms" Vector__XXX
+CM_ SG_ 781 FuelCons "FuelCons";
+ SG_ AirPress_Outsd : 56|8@1+ (7.79527568817,0) [0|1987.79530048] "hPa" Vector__XXX
+CM_ SG_ 781 AirPress_Outsd "AirPress_Outsd";
+
+BA_ "GenMsgCycleTime" BO_ 781 7;
+
+BO_ 841 ECM_A2: 8 ECM_1st_Group
+ SG_ HtPwr_Stat : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 841 HtPwr_Stat "HtPwr_Stat [source enum/value-table reference]";
+ SG_ EM2_Run_Stat : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 841 EM2_Run_Stat "EM2_Run_Stat [source enum/value-table reference]";
+ SG_ RevGr_Engg_MTX_ECM : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 841 RevGr_Engg_MTX_ECM "RevGr_Engg_MTX_ECM [source enum/value-table reference]";
+ SG_ OBD_Clr_Rq : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 841 OBD_Clr_Rq "OBD_Clr_Rq [source boolean]";
+ SG_ AddWtrPmp_On_Rq_ECM : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 841 AddWtrPmp_On_Rq_ECM "AddWtrPmp_On_Rq_ECM [source boolean]";
+ SG_ HVAC_CompTrq_Max : 8|8@1+ (0.25,0) [0|63.75] "Nm" Vector__XXX
+CM_ SG_ 841 HVAC_CompTrq_Max "HVAC_CompTrq_Max";
+ SG_ FuelPmp_On_Rq : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 841 FuelPmp_On_Rq "FuelPmp_On_Rq [source boolean]";
+ SG_ Clutch_Disengg : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 841 Clutch_Disengg "Clutch_Disengg [source boolean]";
+ SG_ EngIdleRPM_Dsr : 26|14@1+ (1,0) [0|16383] "rpm" Vector__XXX
+CM_ SG_ 841 EngIdleRPM_Dsr "EngIdleRPM_Dsr";
+ SG_ EngEff : 40|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+CM_ SG_ 841 EngEff "EngEff";
+ SG_ ParticleFltrCorrOffset : 52|4@1+ (0.0299999993294,0) [0|0.449999989942] "" Vector__XXX
+CM_ SG_ 841 ParticleFltrCorrOffset "ParticleFltrCorrOffset";
+ SG_ EngTrqIncChk_Avl : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 841 EngTrqIncChk_Avl "EngTrqIncChk_Avl [source boolean]";
+ SG_ EngTrqInc_Enbl_TCM : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 841 EngTrqInc_Enbl_TCM "EngTrqInc_Enbl_TCM [source boolean]";
+ SG_ PT_Rdy : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 841 PT_Rdy "PT_Rdy [source boolean]";
+ SG_ FSCM_Alive : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 841 FSCM_Alive "FSCM_Alive [source boolean]";
+ SG_ FuelPress_Rq : 56|8@1+ (0.0500000007451,0) [0|12.75000019] "bar" Vector__XXX
+CM_ SG_ 841 FuelPress_Rq "FuelPress_Rq";
+
+BA_ "GenMsgCycleTime" BO_ 841 16;
+
+BO_ 843 SPC_A1: 7 ECM_1st_Group
+ SG_ VehLoad_Stat : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 843 VehLoad_Stat "VehLoad_Stat [source enum/value-table reference]";
+ SG_ ElecPwr_Inc_Rq_SPC : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 843 ElecPwr_Inc_Rq_SPC "ElecPwr_Inc_Rq_SPC [source enum/value-table reference]";
+ SG_ SPC_Id : 1|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 843 SPC_Id "SPC_Id [source enum/value-table reference]";
+ SG_ LvlCal_Exec : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 843 LvlCal_Exec "LvlCal_Exec [source boolean]";
+ SG_ VehLvl_FL : 8|8@1+ (1,-127) [-127|128] "mm" Vector__XXX
+CM_ SG_ 843 VehLvl_FL "VehLvl_FL";
+ SG_ VehLvl_FR : 16|8@1+ (1,-127) [-127|128] "mm" Vector__XXX
+CM_ SG_ 843 VehLvl_FR "VehLvl_FR";
+ SG_ VehLvl_RL : 24|8@1+ (1,-127) [-127|128] "mm" Vector__XXX
+CM_ SG_ 843 VehLvl_RL "VehLvl_RL";
+ SG_ VehLvl_RR : 32|8@1+ (1,-127) [-127|128] "mm" Vector__XXX
+CM_ SG_ 843 VehLvl_RR "VehLvl_RR";
+ SG_ VehLvl_Rel : 40|8@1+ (1,-127) [-127|128] "mm" Vector__XXX
+CM_ SG_ 843 VehLvl_Rel "VehLvl_Rel";
+ SG_ SSA_Enbl_Rq_SPC : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 843 SSA_Enbl_Rq_SPC "SSA_Enbl_Rq_SPC [source boolean]";
+ SG_ MC_SPC_A1 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 843 MC_SPC_A1 "MC_SPC_A1";
+
+BA_ "GenMsgCycleTime" BO_ 843 11;
+
+BO_ 867 TCASE_DIFFLK_DISP_RQ: 6 ECM_1st_Group
+ SG_ TCASE_GrLo_IndLmp_On_Rq : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 867 TCASE_GrLo_IndLmp_On_Rq "TCASE_GrLo_IndLmp_On_Rq [source enum/value-table reference]";
+ SG_ TCASE_Msg1_Disp_Rq : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 867 TCASE_Msg1_Disp_Rq "TCASE_Msg1_Disp_Rq [source boolean]";
+ SG_ TCASE_Msg2_Disp_Rq : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 867 TCASE_Msg2_Disp_Rq "TCASE_Msg2_Disp_Rq [source boolean]";
+ SG_ TCASE_Msg3_Disp_Rq : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 867 TCASE_Msg3_Disp_Rq "TCASE_Msg3_Disp_Rq [source boolean]";
+ SG_ TCASE_Msg4_Disp_Rq : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 867 TCASE_Msg4_Disp_Rq "TCASE_Msg4_Disp_Rq [source boolean]";
+ SG_ TCASE_Msg5_Disp_Rq : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 867 TCASE_Msg5_Disp_Rq "TCASE_Msg5_Disp_Rq [source boolean]";
+ SG_ TCASE_Msg6_Disp_Rq : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 867 TCASE_Msg6_Disp_Rq "TCASE_Msg6_Disp_Rq [source boolean]";
+ SG_ TCASE_Msg7_Disp_Rq : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 867 TCASE_Msg7_Disp_Rq "TCASE_Msg7_Disp_Rq [source boolean]";
+ SG_ TCASE_Msg8_Disp_Rq : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 867 TCASE_Msg8_Disp_Rq "TCASE_Msg8_Disp_Rq [source boolean]";
+ SG_ DiffLk_Msg9_Disp_Rq : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 867 DiffLk_Msg9_Disp_Rq "DiffLk_Msg9_Disp_Rq [source boolean]";
+ SG_ HPP_Disp_TrgRq_TCASE : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 867 HPP_Disp_TrgRq_TCASE "HPP_Disp_TrgRq_TCASE [source enum/value-table reference]";
+ SG_ DiffLk_Msg1_Disp_Rq : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 867 DiffLk_Msg1_Disp_Rq "DiffLk_Msg1_Disp_Rq [source boolean]";
+ SG_ DiffLk_Msg2_Disp_Rq : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 867 DiffLk_Msg2_Disp_Rq "DiffLk_Msg2_Disp_Rq [source boolean]";
+ SG_ DiffLk_Msg3_Disp_Rq : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 867 DiffLk_Msg3_Disp_Rq "DiffLk_Msg3_Disp_Rq [source boolean]";
+ SG_ DiffLk_Msg4_Disp_Rq : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 867 DiffLk_Msg4_Disp_Rq "DiffLk_Msg4_Disp_Rq [source boolean]";
+ SG_ DiffLk_Msg5_Disp_Rq : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 867 DiffLk_Msg5_Disp_Rq "DiffLk_Msg5_Disp_Rq [source boolean]";
+ SG_ DiffLk_Msg6_Disp_Rq : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 867 DiffLk_Msg6_Disp_Rq "DiffLk_Msg6_Disp_Rq [source boolean]";
+ SG_ DiffLk_Msg7_Disp_Rq : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 867 DiffLk_Msg7_Disp_Rq "DiffLk_Msg7_Disp_Rq [source boolean]";
+ SG_ DiffLk_Msg8_Disp_Rq : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 867 DiffLk_Msg8_Disp_Rq "DiffLk_Msg8_Disp_Rq [source boolean]";
+ SG_ TCASE_Msg9_Disp_Rq : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 867 TCASE_Msg9_Disp_Rq "TCASE_Msg9_Disp_Rq [source boolean]";
+ SG_ TCASE_Msg10_Disp_Rq : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 867 TCASE_Msg10_Disp_Rq "TCASE_Msg10_Disp_Rq [source boolean]";
+ SG_ TCASE_Msg11_Disp_Rq : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 867 TCASE_Msg11_Disp_Rq "TCASE_Msg11_Disp_Rq [source boolean]";
+
+BA_ "GenMsgCycleTime" BO_ 867 22;
+
+BO_ 876 DRVU_A1: 1 ECM_1st_Group
+ SG_ TxDrvProgSw_Psd_AMG : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 876 TxDrvProgSw_Psd_AMG "TxDrvProgSw_Psd_AMG [source enum/value-table reference]";
+
+BA_ "GenMsgCycleTime" BO_ 876 1;
+
+BO_ 879 AMG_ECM_A1: 1 ECM_1st_Group
+ SG_ FuelPress2_Rq : 0|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+CM_ SG_ 879 FuelPress2_Rq "FuelPress2_Rq";
+
+BA_ "GenMsgCycleTime" BO_ 879 1;
+
+BO_ 889 SPC_A3: 6 ECM_1st_Group
+ SG_ SPC_ErrMsg1_Disp_Rq : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 889 SPC_ErrMsg1_Disp_Rq "SPC_ErrMsg1_Disp_Rq [source boolean]";
+ SG_ SPC_ErrMsg2_Disp_Rq : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 889 SPC_ErrMsg2_Disp_Rq "SPC_ErrMsg2_Disp_Rq [source boolean]";
+ SG_ SPC_ErrMsg3_Disp_Rq : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 889 SPC_ErrMsg3_Disp_Rq "SPC_ErrMsg3_Disp_Rq [source boolean]";
+ SG_ SPC_ErrMsg4_Disp_Rq : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 889 SPC_ErrMsg4_Disp_Rq "SPC_ErrMsg4_Disp_Rq [source boolean]";
+ SG_ SPC_Msg1_Disp_Rq : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 889 SPC_Msg1_Disp_Rq "SPC_Msg1_Disp_Rq [source boolean]";
+ SG_ SPC_Msg2_Disp_Rq : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 889 SPC_Msg2_Disp_Rq "SPC_Msg2_Disp_Rq [source boolean]";
+ SG_ SPC_Msg3_Disp_Rq : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 889 SPC_Msg3_Disp_Rq "SPC_Msg3_Disp_Rq [source boolean]";
+ SG_ SPC_Msg4_Disp_Rq : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 889 SPC_Msg4_Disp_Rq "SPC_Msg4_Disp_Rq [source boolean]";
+ SG_ SuspLvlAdjSwLED_Rq : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 889 SuspLvlAdjSwLED_Rq "SuspLvlAdjSwLED_Rq [source enum/value-table reference]";
+ SG_ ADC_SwLED_Rq : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 889 ADC_SwLED_Rq "ADC_SwLED_Rq [source enum/value-table reference]";
+ SG_ ADC_Stat : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 889 ADC_Stat "ADC_Stat [source boolean]";
+ SG_ VehLvlCtrl_Stat : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 889 VehLvlCtrl_Stat "VehLvlCtrl_Stat [source boolean]";
+ SG_ SPC_Msg5_Disp_Rq : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 889 SPC_Msg5_Disp_Rq "SPC_Msg5_Disp_Rq [source boolean]";
+ SG_ SPC_Msg6_Disp_Rq : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 889 SPC_Msg6_Disp_Rq "SPC_Msg6_Disp_Rq [source boolean]";
+ SG_ SPC_LvlMsg_Disp_Rq : 19|5@1+ (1,0) [0|31] "" Vector__XXX
+CM_ SG_ 889 SPC_LvlMsg_Disp_Rq "SPC_LvlMsg_Disp_Rq [source enum/value-table reference]";
+ SG_ SPC_WarnMsg_Disp_Rq : 16|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 889 SPC_WarnMsg_Disp_Rq "SPC_WarnMsg_Disp_Rq [source enum/value-table reference]";
+ SG_ HPP_Disp_TrgRq_SPC : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 889 HPP_Disp_TrgRq_SPC "HPP_Disp_TrgRq_SPC [source enum/value-table reference]";
+ SG_ HPP_Disp_NoCnfrm : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 889 HPP_Disp_NoCnfrm "HPP_Disp_NoCnfrm [source boolean]";
+ SG_ SPC_LvlMsg_NoCnfrm : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 889 SPC_LvlMsg_NoCnfrm "SPC_LvlMsg_NoCnfrm [source boolean]";
+ SG_ SPC_LvlMsg_Disp_Rq_TrgRq : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 889 SPC_LvlMsg_Disp_Rq_TrgRq "SPC_LvlMsg_Disp_Rq_TrgRq [source enum/value-table reference]";
+ SG_ SuspLvlAdjSwLED_L_Rq : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 889 SuspLvlAdjSwLED_L_Rq "SuspLvlAdjSwLED_L_Rq [source enum/value-table reference]";
+ SG_ SuspLvlAdjSwLED_U_Rq : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 889 SuspLvlAdjSwLED_U_Rq "SuspLvlAdjSwLED_U_Rq [source enum/value-table reference]";
+ SG_ SPC_Msg11_Disp_Rq : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 889 SPC_Msg11_Disp_Rq "SPC_Msg11_Disp_Rq [source boolean]";
+ SG_ SPC_Msg10_Disp_Rq : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 889 SPC_Msg10_Disp_Rq "SPC_Msg10_Disp_Rq [source boolean]";
+ SG_ SPC_Msg9_Disp_Rq : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 889 SPC_Msg9_Disp_Rq "SPC_Msg9_Disp_Rq [source boolean]";
+ SG_ SPC_Msg8_Disp_Rq : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 889 SPC_Msg8_Disp_Rq "SPC_Msg8_Disp_Rq [source boolean]";
+ SG_ SPC_Msg7_Disp_Rq : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 889 SPC_Msg7_Disp_Rq "SPC_Msg7_Disp_Rq [source boolean]";
+
+BA_ "GenMsgCycleTime" BO_ 889 27;
+
+BO_ 897 SSP_RS_SSP: 8 ECM_1st_Group
+ SG_ CurrDtyCyc_Actl : 0|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+CM_ SG_ 897 CurrDtyCyc_Actl "CurrDtyCyc_Actl";
+ SG_ SSP_Diag_Stat : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 897 SSP_Diag_Stat "SSP_Diag_Stat [source enum/value-table reference]";
+ SG_ MC_SSP_RS_SSP : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 897 MC_SSP_RS_SSP "MC_SSP_RS_SSP";
+ SG_ CRC_SSP_RS_SSP : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 897 CRC_SSP_RS_SSP "CRC_SSP_RS_SSP";
+
+BA_ "GenMsgCycleTime" BO_ 897 4;
+
+BO_ 903 FSCM_DISP_RQ: 4 ECM_1st_Group
+ SG_ FSCM_FuelRefillEvent_Dtct : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 903 FSCM_FuelRefillEvent_Dtct "FSCM_FuelRefillEvent_Dtct [source boolean]";
+ SG_ FSCM_TankLvl_Min_50 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 903 FSCM_TankLvl_Min_50 "FSCM_TankLvl_Min_50 [source boolean]";
+ SG_ FSCM_TankLvl : 5|11@1+ (0.10000000149,0) [0|204.70000305] "l" Vector__XXX
+CM_ SG_ 903 FSCM_TankLvl "FSCM_TankLvl";
+ SG_ FSCM_TankLvl_Rel : 17|7@1+ (1,0) [0|127] "%" Vector__XXX
+CM_ SG_ 903 FSCM_TankLvl_Rel "FSCM_TankLvl_Rel";
+ SG_ FSCM_TankLvl_Min : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 903 FSCM_TankLvl_Min "FSCM_TankLvl_Min [source boolean]";
+ SG_ FSCM_TankLvl_Max : 24|8@1+ (1,0) [0|255] "l" Vector__XXX
+CM_ SG_ 903 FSCM_TankLvl_Max "FSCM_TankLvl_Max";
+
+BA_ "GenMsgCycleTime" BO_ 903 6;
+
+BO_ 907 LDC_DISP_RQ: 8 ECM_1st_Group
+ SG_ LDC_DTR_MsgDisp_Rq : 5|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 907 LDC_DTR_MsgDisp_Rq "LDC_DTR_MsgDisp_Rq [source enum/value-table reference]";
+ SG_ LDC_CMS_MsgDisp_Rq : 3|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 907 LDC_CMS_MsgDisp_Rq "LDC_CMS_MsgDisp_Rq [source enum/value-table reference]";
+ SG_ LDC_CMS_Stat : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 907 LDC_CMS_Stat "LDC_CMS_Stat [source enum/value-table reference]";
+ SG_ LDC_DTR_Stat : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+CM_ SG_ 907 LDC_DTR_Stat "LDC_DTR_Stat [source enum/value-table reference]";
+ SG_ LDC_RadarSens_Off : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 907 LDC_RadarSens_Off "LDC_RadarSens_Off [source boolean]";
+ SG_ LDC_WTSL_Flt : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 907 LDC_WTSL_Flt "LDC_WTSL_Flt [source boolean]";
+ SG_ LDC_SpdUnit_Rs : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 907 LDC_SpdUnit_Rs "LDC_SpdUnit_Rs [source boolean]";
+ SG_ LDC_VSL_On : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 907 LDC_VSL_On "LDC_VSL_On [source boolean]";
+ SG_ LDC_MsgDisp_Rq : 19|5@1+ (1,0) [0|31] "" Vector__XXX
+CM_ SG_ 907 LDC_MsgDisp_Rq "LDC_MsgDisp_Rq [source enum/value-table reference]";
+ SG_ LDC_MsgDisp_TrgrRq : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 907 LDC_MsgDisp_TrgrRq "LDC_MsgDisp_TrgrRq [source boolean]";
+ SG_ LDC_DTR_IndLmp_On_Rq : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 907 LDC_DTR_IndLmp_On_Rq "LDC_DTR_IndLmp_On_Rq [source enum/value-table reference]";
+ SG_ LDC_AcustWarn_Rq : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 907 LDC_AcustWarn_Rq "LDC_AcustWarn_Rq [source enum/value-table reference]";
+ SG_ LDC_Spd_Dsr : 32|8@1+ (1,0) [0|255] "km/h(mph)" Vector__XXX
+CM_ SG_ 907 LDC_Spd_Dsr "LDC_Spd_Dsr";
+ SG_ LDC_Spd_Add : 40|8@1+ (1,0) [0|255] "km/h(mph)" Vector__XXX
+CM_ SG_ 907 LDC_Spd_Add "LDC_Spd_Add";
+ SG_ LDC_Dist_Dsr : 48|8@1+ (1,0) [0|255] "m" Vector__XXX
+CM_ SG_ 907 LDC_Dist_Dsr "LDC_Dist_Dsr";
+ SG_ LDC_Dist : 56|8@1+ (1,0) [0|255] "m" Vector__XXX
+CM_ SG_ 907 LDC_Dist "LDC_Dist";
+
+BA_ "GenMsgCycleTime" BO_ 907 16;
+
+BO_ 932 SSM_OBD_DTC: 8 ECM_1st_Group
+ SG_ SSM_DTC1_Stat : 5|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 932 SSM_DTC1_Stat "SSM_DTC1_Stat [source enum/value-table reference]";
+ SG_ SSM_DTC1_Idx : 0|5@1+ (1,0) [0|31] "" Vector__XXX
+CM_ SG_ 932 SSM_DTC1_Idx "SSM_DTC1_Idx";
+ SG_ SSM_CALID_CVN_ErrNum : 50|6@1+ (1,0) [0|63] "" Vector__XXX
+CM_ SG_ 932 SSM_CALID_CVN_ErrNum "SSM_CALID_CVN_ErrNum";
+ SG_ SSM_Data : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 932 SSM_Data "SSM_Data";
+
+BA_ "GenMsgCycleTime" BO_ 932 4;
+
+BO_ 965 BODY_R2: 8 ECM_1st_Group
+ SG_ SuspLvlAdjSw_Psd : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 965 SuspLvlAdjSw_Psd "SuspLvlAdjSw_Psd [source enum/value-table reference]";
+ SG_ LoRng_Sw_Psd : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 965 LoRng_Sw_Psd "LoRng_Sw_Psd [source enum/value-table reference]";
+ SG_ StW_Cond_Actv : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 965 StW_Cond_Actv "StW_Cond_Actv [source enum/value-table reference]";
+ SG_ VehDrvProgSw_Psd : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 965 VehDrvProgSw_Psd "VehDrvProgSw_Psd [source enum/value-table reference]";
+ SG_ ESP_Sw_Psd : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 965 ESP_Sw_Psd "ESP_Sw_Psd [source enum/value-table reference]";
+ SG_ NV_Sw_Psd : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 965 NV_Sw_Psd "NV_Sw_Psd [source enum/value-table reference]";
+ SG_ PTS_Sw_Psd : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 965 PTS_Sw_Psd "PTS_Sw_Psd [source enum/value-table reference]";
+ SG_ PKAS_Sw_Psd : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 965 PKAS_Sw_Psd "PKAS_Sw_Psd [source enum/value-table reference]";
+ SG_ TX_Actv : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 965 TX_Actv "TX_Actv [source boolean]";
+ SG_ DL_Sw_Psd : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 965 DL_Sw_Psd "DL_Sw_Psd [source boolean]";
+ SG_ CoolIndLmp_On_Rq : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 965 CoolIndLmp_On_Rq "CoolIndLmp_On_Rq [source boolean]";
+ SG_ RLS_AutoPosn : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 965 RLS_AutoPosn "RLS_AutoPosn [source boolean]";
+ SG_ RLS_PkLmp_Posn_Rt : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 965 RLS_PkLmp_Posn_Rt "RLS_PkLmp_Posn_Rt [source boolean]";
+ SG_ RLS_PkLmp_Posn_Lt : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 965 RLS_PkLmp_Posn_Lt "RLS_PkLmp_Posn_Lt [source boolean]";
+ SG_ RLS_LoBm_Posn : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 965 RLS_LoBm_Posn "RLS_LoBm_Posn [source boolean]";
+ SG_ RLS_Red : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 965 RLS_Red "RLS_Red [source boolean]";
+ SG_ RLS_FogLmp_Ft_Posn : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 965 RLS_FogLmp_Ft_Posn "RLS_FogLmp_Ft_Posn [source boolean]";
+ SG_ RLS_FogLmp_R_Posn : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 965 RLS_FogLmp_R_Posn "RLS_FogLmp_R_Posn [source boolean]";
+ SG_ RLS_PosnLmp_Posn : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 965 RLS_PosnLmp_Posn "RLS_PosnLmp_Posn [source boolean]";
+ SG_ RLS_Init_Actv : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 965 RLS_Init_Actv "RLS_Init_Actv [source boolean]";
+ SG_ BSM_WarnUnit_Lt_Stat : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 965 BSM_WarnUnit_Lt_Stat "BSM_WarnUnit_Lt_Stat [source enum/value-table reference]";
+ SG_ BSM_WarnUnit_Rt_Stat : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 965 BSM_WarnUnit_Rt_Stat "BSM_WarnUnit_Rt_Stat [source enum/value-table reference]";
+ SG_ ADC_Sw_Psd_V2 : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 965 ADC_Sw_Psd_V2 "ADC_Sw_Psd_V2 [source enum/value-table reference]";
+ SG_ Phonecall_SDS_Actv : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 965 Phonecall_SDS_Actv "Phonecall_SDS_Actv [source enum/value-table reference]";
+ SG_ Tlm_Sw_Psd : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 965 Tlm_Sw_Psd "Tlm_Sw_Psd [source enum/value-table reference]";
+ SG_ DSR_Sw_Psd : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 965 DSR_Sw_Psd "DSR_Sw_Psd [source enum/value-table reference]";
+ SG_ OffRoadSw_Psd : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 965 OffRoadSw_Psd "OffRoadSw_Psd [source enum/value-table reference]";
+ SG_ ADC_Sw_Psd_CTRL_L_V2 : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 965 ADC_Sw_Psd_CTRL_L_V2 "ADC_Sw_Psd_CTRL_L_V2 [source enum/value-table reference]";
+ SG_ SuspLvlAdjSw_Psd_CTRL_L : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 965 SuspLvlAdjSw_Psd_CTRL_L "SuspLvlAdjSw_Psd_CTRL_L [source enum/value-table reference]";
+ SG_ SSA_ECO_Sw_Psd_CTRL_U : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 965 SSA_ECO_Sw_Psd_CTRL_U "SSA_ECO_Sw_Psd_CTRL_U [source enum/value-table reference]";
+ SG_ IrLmp_Stat : 61|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 965 IrLmp_Stat "IrLmp_Stat [source enum/value-table reference]";
+
+BA_ "GenMsgCycleTime" BO_ 965 31;
+
+BO_ 976 ECM_OBD: 4 ECM_1st_Group
+ SG_ AccelPdlPosn_OBD : 0|8@1+ (0.392156869173,0) [0|100.000001639] "%" Vector__XXX
+CM_ SG_ 976 AccelPdlPosn_OBD "AccelPdlPosn_OBD";
+ SG_ EngLoad_OBD : 8|8@1+ (0.392156869173,0) [0|100.000001639] "%" Vector__XXX
+CM_ SG_ 976 EngLoad_OBD "EngLoad_OBD";
+ SG_ AirTemp_Outsd_Sens_Flt : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 976 AirTemp_Outsd_Sens_Flt "AirTemp_Outsd_Sens_Flt [source boolean]";
+ SG_ OBD_GnrlDenCond_PDTC_Delete : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 976 OBD_GnrlDenCond_PDTC_Delete "OBD_GnrlDenCond_PDTC_Delete [source boolean]";
+ SG_ OBD_ColdStartDenCond_Stat : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 976 OBD_ColdStartDenCond_Stat "OBD_ColdStartDenCond_Stat [source enum/value-table reference]";
+ SG_ OBD_WarmupCond_Actv : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 976 OBD_WarmupCond_Actv "OBD_WarmupCond_Actv [source boolean]";
+ SG_ OBD_GnrlDenCond_Stat : 29|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 976 OBD_GnrlDenCond_Stat "OBD_GnrlDenCond_Stat [source enum/value-table reference]";
+ SG_ OBD_IgnCycCntCond_Stat : 27|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 976 OBD_IgnCycCntCond_Stat "OBD_IgnCycCntCond_Stat [source enum/value-table reference]";
+
+BA_ "GenMsgCycleTime" BO_ 976 8;
+
+BO_ 993 IC_A3: 8 ECM_1st_Group
+ SG_ FTW_On_Rq : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 FTW_On_Rq "FTW_On_Rq [source enum/value-table reference]";
+ SG_ TPM_Actv_Rq_V2 : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 TPM_Actv_Rq_V2 "TPM_Actv_Rq_V2 [source enum/value-table reference]";
+ SG_ DRLt_On_Rq : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 DRLt_On_Rq "DRLt_On_Rq [source enum/value-table reference]";
+ SG_ RadarSensMd_Rq : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 RadarSensMd_Rq "RadarSensMd_Rq [source enum/value-table reference]";
+ SG_ DataRadioMenu_Stat : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 DataRadioMenu_Stat "DataRadioMenu_Stat [source enum/value-table reference]";
+ SG_ TaxiMd_Rq : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 TaxiMd_Rq "TaxiMd_Rq [source enum/value-table reference]";
+ SG_ TaxiRoofLmpMd_Rq : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 TaxiRoofLmpMd_Rq "TaxiRoofLmpMd_Rq [source enum/value-table reference]";
+ SG_ TaxiToneMd_Rq : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 TaxiToneMd_Rq "TaxiToneMd_Rq [source enum/value-table reference]";
+ SG_ TAX_Rq : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 TAX_Rq "TAX_Rq [source enum/value-table reference]";
+ SG_ DRVM_SysMd_Rq : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 DRVM_SysMd_Rq "DRVM_SysMd_Rq [source enum/value-table reference]";
+ SG_ DRVM_AudioMd_Rq : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 DRVM_AudioMd_Rq "DRVM_AudioMd_Rq [source enum/value-table reference]";
+ SG_ UnitTemp_Rq : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 UnitTemp_Rq "UnitTemp_Rq [source enum/value-table reference]";
+ SG_ UnitPress_Rq : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 UnitPress_Rq "UnitPress_Rq [source enum/value-table reference]";
+ SG_ AFS_Md_Rq : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 AFS_Md_Rq "AFS_Md_Rq [source enum/value-table reference]";
+ SG_ SSA_ECO_Md_Rq : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 SSA_ECO_Md_Rq "SSA_ECO_Md_Rq [source enum/value-table reference]";
+ SG_ IHC_Md_Rq : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 IHC_Md_Rq "IHC_Md_Rq [source enum/value-table reference]";
+ SG_ ALDW_Md_Rq : 37|3@1+ (1,0) [0|7] "" Vector__XXX
+CM_ SG_ 993 ALDW_Md_Rq "ALDW_Md_Rq [source enum/value-table reference]";
+ SG_ SLA_Md_Rq : 35|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 SLA_Md_Rq "SLA_Md_Rq [source enum/value-table reference]";
+ SG_ BltSlckDec_Md_Rq : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 BltSlckDec_Md_Rq "BltSlckDec_Md_Rq [source enum/value-table reference]";
+ SG_ PTS_AcustWarn_Enbl : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 PTS_AcustWarn_Enbl "PTS_AcustWarn_Enbl [source enum/value-table reference]";
+ SG_ PTS_Md_Rq : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 PTS_Md_Rq "PTS_Md_Rq [source enum/value-table reference]";
+ SG_ BSM_AcustWarn_Enbl : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 BSM_AcustWarn_Enbl "BSM_AcustWarn_Enbl [source enum/value-table reference]";
+ SG_ BSM_Md_Rq : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 BSM_Md_Rq "BSM_Md_Rq [source enum/value-table reference]";
+ SG_ VehDrvProgSys1_Md_Rq : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 VehDrvProgSys1_Md_Rq "VehDrvProgSys1_Md_Rq [source enum/value-table reference]";
+ SG_ VehDrvProgSys2_Md_Rq : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 VehDrvProgSys2_Md_Rq "VehDrvProgSys2_Md_Rq [source enum/value-table reference]";
+ SG_ VehDrvProgSys3_Md_Rq : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 VehDrvProgSys3_Md_Rq "VehDrvProgSys3_Md_Rq [source enum/value-table reference]";
+ SG_ VehDrvProgSys4_Md_Rq : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 VehDrvProgSys4_Md_Rq "VehDrvProgSys4_Md_Rq [source enum/value-table reference]";
+ SG_ VehDrvProgSys5_Md_Rq : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 VehDrvProgSys5_Md_Rq "VehDrvProgSys5_Md_Rq [source enum/value-table reference]";
+ SG_ VehDrvProgSys6_Md_Rq : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 VehDrvProgSys6_Md_Rq "VehDrvProgSys6_Md_Rq [source enum/value-table reference]";
+ SG_ ILS_TouristMd_Rq : 58|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 ILS_TouristMd_Rq "ILS_TouristMd_Rq [source enum/value-table reference]";
+ SG_ CLkS_Akust_Lk_Rq_Enbl : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+CM_ SG_ 993 CLkS_Akust_Lk_Rq_Enbl "CLkS_Akust_Lk_Rq_Enbl [source enum/value-table reference]";
+
+BA_ "GenMsgCycleTime" BO_ 993 31;
+
+BO_ 1052 NM_TCM: 8 ECM_1st_Group
+ SG_ NM_Mode : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1052 NM_Mode "NM_Mode [source enum/value-table reference]";
+ SG_ NM_Successor : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1052 NM_Successor "NM_Successor";
+ SG_ NM_Ud_Launch : 18|6@1+ (1,0) [0|63] "" Vector__XXX
+CM_ SG_ 1052 NM_Ud_Launch "NM_Ud_Launch [source enum/value-table reference]";
+ SG_ NM_Sleep_Ack : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1052 NM_Sleep_Ack "NM_Sleep_Ack [source boolean]";
+ SG_ NM_Sleep_Ind : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1052 NM_Sleep_Ind "NM_Sleep_Ind [source boolean]";
+ SG_ NM_Ud_Srv : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1052 NM_Ud_Srv "NM_Ud_Srv [source enum/value-table reference]";
+ SG_ Awake_NwSt : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1052 Awake_NwSt "Awake_NwSt [source boolean]";
+ SG_ Awake_Diag_Actv : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1052 Awake_Diag_Actv "Awake_Diag_Actv [source boolean]";
+ SG_ WakeupCnt : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1052 WakeupCnt "WakeupCnt";
+ SG_ Nw_Id : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1052 Nw_Id "Nw_Id [source enum/value-table reference]";
+
+BA_ "GenMsgCycleTime" BO_ 1052 10;
+
+BO_ 1054 NM_SSP: 8 ECM_1st_Group
+ SG_ NM_Mode : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1054 NM_Mode "NM_Mode [source enum/value-table reference]";
+ SG_ NM_Successor : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1054 NM_Successor "NM_Successor";
+ SG_ NM_Ud_Launch : 18|6@1+ (1,0) [0|63] "" Vector__XXX
+CM_ SG_ 1054 NM_Ud_Launch "NM_Ud_Launch [source enum/value-table reference]";
+ SG_ NM_Sleep_Ack : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1054 NM_Sleep_Ack "NM_Sleep_Ack [source boolean]";
+ SG_ NM_Sleep_Ind : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1054 NM_Sleep_Ind "NM_Sleep_Ind [source boolean]";
+ SG_ NM_Ud_Srv : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1054 NM_Ud_Srv "NM_Ud_Srv [source enum/value-table reference]";
+ SG_ Awake_NwSt : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1054 Awake_NwSt "Awake_NwSt [source boolean]";
+ SG_ Awake_Diag_Actv : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1054 Awake_Diag_Actv "Awake_Diag_Actv [source boolean]";
+ SG_ WakeupCnt : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1054 WakeupCnt "WakeupCnt";
+ SG_ Nw_Id : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1054 Nw_Id "Nw_Id [source enum/value-table reference]";
+
+BA_ "GenMsgCycleTime" BO_ 1054 10;
+
+BO_ 1055 NM_FSCM: 8 ECM_1st_Group
+ SG_ NM_Mode : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1055 NM_Mode "NM_Mode [source enum/value-table reference]";
+ SG_ NM_Successor : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1055 NM_Successor "NM_Successor";
+ SG_ NM_Ud_Launch : 18|6@1+ (1,0) [0|63] "" Vector__XXX
+CM_ SG_ 1055 NM_Ud_Launch "NM_Ud_Launch [source enum/value-table reference]";
+ SG_ NM_Sleep_Ack : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1055 NM_Sleep_Ack "NM_Sleep_Ack [source boolean]";
+ SG_ NM_Sleep_Ind : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1055 NM_Sleep_Ind "NM_Sleep_Ind [source boolean]";
+ SG_ NM_Ud_Srv : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1055 NM_Ud_Srv "NM_Ud_Srv [source enum/value-table reference]";
+ SG_ Awake_NwSt : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1055 Awake_NwSt "Awake_NwSt [source boolean]";
+ SG_ Awake_Diag_Actv : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1055 Awake_Diag_Actv "Awake_Diag_Actv [source boolean]";
+ SG_ Awake_Ignition_On : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1055 Awake_Ignition_On "Awake_Ignition_On [source boolean]";
+ SG_ Awake_Afterrun_Actv : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1055 Awake_Afterrun_Actv "Awake_Afterrun_Actv [source boolean]";
+ SG_ Awake_Term15_Actv : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1055 Awake_Term15_Actv "Awake_Term15_Actv [source boolean]";
+ SG_ WakeupCnt : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1055 WakeupCnt "WakeupCnt";
+ SG_ Nw_Id : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1055 Nw_Id "Nw_Id [source enum/value-table reference]";
+
+BA_ "GenMsgCycleTime" BO_ 1055 13;
+
+BO_ 1065 NM_ECM: 8 ECM_1st_Group
+ SG_ NM_Mode : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1065 NM_Mode "NM_Mode [source enum/value-table reference]";
+ SG_ NM_Successor : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1065 NM_Successor "NM_Successor";
+ SG_ NM_Ud_Launch : 18|6@1+ (1,0) [0|63] "" Vector__XXX
+CM_ SG_ 1065 NM_Ud_Launch "NM_Ud_Launch [source enum/value-table reference]";
+ SG_ NM_Sleep_Ack : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1065 NM_Sleep_Ack "NM_Sleep_Ack [source boolean]";
+ SG_ NM_Sleep_Ind : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1065 NM_Sleep_Ind "NM_Sleep_Ind [source boolean]";
+ SG_ NM_Ud_Srv : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1065 NM_Ud_Srv "NM_Ud_Srv [source enum/value-table reference]";
+ SG_ Awake_NwSt : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1065 Awake_NwSt "Awake_NwSt [source boolean]";
+ SG_ Awake_Diag_Actv : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1065 Awake_Diag_Actv "Awake_Diag_Actv [source boolean]";
+ SG_ Awake_Ignition_On : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1065 Awake_Ignition_On "Awake_Ignition_On [source boolean]";
+ SG_ Awake_Afterrun_Actv : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1065 Awake_Afterrun_Actv "Awake_Afterrun_Actv [source boolean]";
+ SG_ Awake_EngFan_Actv : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1065 Awake_EngFan_Actv "Awake_EngFan_Actv [source boolean]";
+ SG_ Awake_EngRestart : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1065 Awake_EngRestart "Awake_EngRestart [source boolean]";
+ SG_ Awake_CHASSIS : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1065 Awake_CHASSIS "Awake_CHASSIS [source boolean]";
+ SG_ Awake_POWERTRAIN : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1065 Awake_POWERTRAIN "Awake_POWERTRAIN [source boolean]";
+ SG_ Awake_CCP_Actv : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1065 Awake_CCP_Actv "Awake_CCP_Actv [source boolean]";
+ SG_ Awake_HYBRID : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1065 Awake_HYBRID "Awake_HYBRID [source boolean]";
+ SG_ Nw_Id : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1065 Nw_Id "Nw_Id [source enum/value-table reference]";
+
+BA_ "GenMsgCycleTime" BO_ 1065 17;
+
+BO_ 1071 NM_TSLM: 8 ECM_1st_Group
+ SG_ NM_Mode : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1071 NM_Mode "NM_Mode [source enum/value-table reference]";
+ SG_ NM_Successor : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1071 NM_Successor "NM_Successor";
+ SG_ NM_Ud_Launch : 18|6@1+ (1,0) [0|63] "" Vector__XXX
+CM_ SG_ 1071 NM_Ud_Launch "NM_Ud_Launch [source enum/value-table reference]";
+ SG_ NM_Sleep_Ack : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1071 NM_Sleep_Ack "NM_Sleep_Ack [source boolean]";
+ SG_ NM_Sleep_Ind : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1071 NM_Sleep_Ind "NM_Sleep_Ind [source boolean]";
+ SG_ NM_Ud_Srv : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1071 NM_Ud_Srv "NM_Ud_Srv [source enum/value-table reference]";
+ SG_ Awake_NwSt : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1071 Awake_NwSt "Awake_NwSt [source boolean]";
+ SG_ Awake_Diag_Actv : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1071 Awake_Diag_Actv "Awake_Diag_Actv [source boolean]";
+ SG_ Awake_Ignition_On : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+CM_ SG_ 1071 Awake_Ignition_On "Awake_Ignition_On [source boolean]";
+ SG_ WakeupCnt : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1071 WakeupCnt "WakeupCnt";
+ SG_ Nw_Id : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+CM_ SG_ 1071 Nw_Id "Nw_Id [source enum/value-table reference]";
+
+BA_ "GenMsgCycleTime" BO_ 1071 11;
+
+BO_ 1088 DG_RQ_GLOBAL: 8 ECM_1st_Group
+ SG_ DG_RQ_GLOBAL : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1088 DG_RQ_GLOBAL "DG_RQ_GLOBAL [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1088 1;
+
+BO_ 1089 DG_RQ_GLOBAL_UDS: 8 ECM_1st_Group
+ SG_ DG_RQ_GLOBAL_UDS : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1089 DG_RQ_GLOBAL_UDS "DG_RQ_GLOBAL_UDS [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1089 1;
+
+BO_ 1181 D_RS_ISM: 8 ECM_1st_Group
+ SG_ D_RS_ISM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1181 D_RS_ISM "D_RS_ISM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1181 1;
+
+BO_ 1182 D_RS_SSP: 8 ECM_1st_Group
+ SG_ D_RS_SSP : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1182 D_RS_SSP "D_RS_SSP [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1182 1;
+
+BO_ 1183 D_RS_FSCM: 8 ECM_1st_Group
+ SG_ D_RS_FSCM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1183 D_RS_FSCM "D_RS_FSCM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1183 1;
+
+BO_ 1187 D_RS_SSM: 8 ECM_1st_Group
+ SG_ D_RS_SSM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1187 D_RS_SSM "D_RS_SSM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1187 1;
+
+BO_ 1199 D_RS_TSLM: 8 ECM_1st_Group
+ SG_ D_RS_TSLM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1199 D_RS_TSLM "D_RS_TSLM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1199 1;
+
+BO_ 1202 D_RS_DSI: 8 ECM_1st_Group
+ SG_ D_RS_DSI : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1202 D_RS_DSI "D_RS_DSI [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1202 1;
+
+BO_ 1203 D_RS_TCASE: 8 ECM_1st_Group
+ SG_ D_RS_TCASE : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1203 D_RS_TCASE "D_RS_TCASE [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1203 1;
+
+BO_ 1205 D_RS_FSCM2: 8 ECM_1st_Group
+ SG_ D_RS_FSCM2 : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1205 D_RS_FSCM2 "D_RS_FSCM2 [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1205 1;
+
+BO_ 1280 TCM_HSG: 8 ECM_1st_Group
+ SG_ TCM_HSG : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1280 TCM_HSG "TCM_HSG [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1280 1;
+
+BO_ 1281 TCM_HS1: 8 ECM_1st_Group
+ SG_ TCM_HS1 : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1281 TCM_HS1 "TCM_HS1 [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1281 1;
+
+BO_ 1282 TCM_HS2: 8 ECM_1st_Group
+ SG_ TCM_HS2 : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1282 TCM_HS2 "TCM_HS2 [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1282 1;
+
+BO_ 1283 TCM_HS3: 8 ECM_1st_Group
+ SG_ TCM_HS3 : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1283 TCM_HS3 "TCM_HS3 [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1283 1;
+
+BO_ 1284 TCM_HS4: 8 ECM_1st_Group
+ SG_ TCM_HS4 : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1284 TCM_HS4 "TCM_HS4 [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1284 1;
+
+BO_ 1285 TCM_HS5: 8 ECM_1st_Group
+ SG_ TCM_HS5 : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1285 TCM_HS5 "TCM_HS5 [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1285 1;
+
+BO_ 1286 TCM_HS6: 8 ECM_1st_Group
+ SG_ TCM_HS6 : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1286 TCM_HS6 "TCM_HS6 [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1286 1;
+
+BO_ 1287 TCM_HS7: 8 ECM_1st_Group
+ SG_ TCM_HS7 : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1287 TCM_HS7 "TCM_HS7 [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1287 1;
+
+BO_ 1288 TCM_HS8: 8 ECM_1st_Group
+ SG_ TCM_HS8 : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1288 TCM_HS8 "TCM_HS8 [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1288 1;
+
+BO_ 1289 TCM_HSH: 8 ECM_1st_Group
+ SG_ TCM_HSH : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1289 TCM_HSH "TCM_HSH [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1289 1;
+
+BO_ 1290 TCM_HSA: 8 ECM_1st_Group
+ SG_ TCM_HSA : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1290 TCM_HSA "TCM_HSA [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1290 1;
+
+BO_ 1291 TCM_HSB: 8 ECM_1st_Group
+ SG_ TCM_HSB : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1291 TCM_HSB "TCM_HSB [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1291 1;
+
+BO_ 1292 TCM_HSC: 8 ECM_1st_Group
+ SG_ TCM_HSC : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1292 TCM_HSC "TCM_HSC [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1292 1;
+
+BO_ 1293 TCM_HSD: 8 ECM_1st_Group
+ SG_ TCM_HSD : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1293 TCM_HSD "TCM_HSD [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1293 1;
+
+BO_ 1294 TCM_HSE: 8 ECM_1st_Group
+ SG_ TCM_HSE : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1294 TCM_HSE "TCM_HSE [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1294 1;
+
+BO_ 1295 TCM_HSF: 8 ECM_1st_Group
+ SG_ TCM_HSF : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1295 TCM_HSF "TCM_HSF [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1295 1;
+
+BO_ 1308 SG_APPL_TCM: 8 ECM_1st_Group
+ SG_ SG_APPL_TCM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1308 SG_APPL_TCM "SG_APPL_TCM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1308 1;
+
+BO_ 1309 SG_APPL_ISM: 8 ECM_1st_Group
+ SG_ SG_APPL_ISM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1309 SG_APPL_ISM "SG_APPL_ISM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1309 1;
+
+BO_ 1310 SG_APPL_SSP: 8 ECM_1st_Group
+ SG_ SG_APPL_SSP : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1310 SG_APPL_SSP "SG_APPL_SSP [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1310 1;
+
+BO_ 1311 SG_APPL_FSCM: 8 ECM_1st_Group
+ SG_ SG_APPL_FSCM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1311 SG_APPL_FSCM "SG_APPL_FSCM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1311 1;
+
+BO_ 1315 SG_APPL_SSM: 8 ECM_1st_Group
+ SG_ SG_APPL_SSM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1315 SG_APPL_SSM "SG_APPL_SSM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1315 1;
+
+BO_ 1327 SG_APPL_TSLM: 8 ECM_1st_Group
+ SG_ SG_APPL_TSLM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1327 SG_APPL_TSLM "SG_APPL_TSLM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1327 1;
+
+BO_ 1331 SG_APPL_TCASE: 8 ECM_1st_Group
+ SG_ SG_APPL_TCASE : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1331 SG_APPL_TCASE "SG_APPL_TCASE [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1331 1;
+
+BO_ 1436 SD_RS_TCM: 8 ECM_1st_Group
+ SG_ SD_RS_TCM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1436 SD_RS_TCM "SD_RS_TCM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1436 1;
+
+BO_ 1437 SD_RS_ISM: 8 ECM_1st_Group
+ SG_ SD_RS_ISM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1437 SD_RS_ISM "SD_RS_ISM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1437 1;
+
+BO_ 1438 SD_RS_SSP: 8 ECM_1st_Group
+ SG_ SD_RS_SSP : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1438 SD_RS_SSP "SD_RS_SSP [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1438 1;
+
+BO_ 1439 SD_RS_FSCM: 8 ECM_1st_Group
+ SG_ SD_RS_FSCM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1439 SD_RS_FSCM "SD_RS_FSCM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1439 1;
+
+BO_ 1443 SD_RS_SSM: 8 ECM_1st_Group
+ SG_ SD_RS_SSM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1443 SD_RS_SSM "SD_RS_SSM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1443 1;
+
+BO_ 1455 SD_RS_TSLM: 8 ECM_1st_Group
+ SG_ SD_RS_TSLM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1455 SD_RS_TSLM "SD_RS_TSLM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1455 1;
+
+BO_ 1458 SD_RS_DSI: 8 ECM_1st_Group
+ SG_ SD_RS_DSI : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1458 SD_RS_DSI "SD_RS_DSI [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1458 1;
+
+BO_ 1459 SD_RS_TCASE: 8 ECM_1st_Group
+ SG_ SD_RS_TCASE : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1459 SD_RS_TCASE "SD_RS_TCASE [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1459 1;
+
+BO_ 1461 SD_RS_FSCM2: 8 ECM_1st_Group
+ SG_ SD_RS_FSCM2 : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1461 SD_RS_FSCM2 "SD_RS_FSCM2 [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1461 1;
+
+BO_ 1536 SG_APPL_ISM2: 8 ECM_1st_Group
+ SG_ SG_APPL_ISM2 : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1536 SG_APPL_ISM2 "SG_APPL_ISM2 [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1536 1;
+
+BO_ 1764 APPL_SG_TCM: 8 ECM_1st_Group
+ SG_ APPL_SG_TCM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1764 APPL_SG_TCM "APPL_SG_TCM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1764 1;
+
+BO_ 1770 D_RQ_ISM: 8 ECM_1st_Group
+ SG_ D_RQ_ISM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1770 D_RQ_ISM "D_RQ_ISM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1770 1;
+
+BO_ 1772 APPL_SG_ISM: 8 ECM_1st_Group
+ SG_ APPL_SG_ISM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1772 APPL_SG_ISM "APPL_SG_ISM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1772 1;
+
+BO_ 1778 D_RQ_SSP: 8 ECM_1st_Group
+ SG_ D_RQ_SSP : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1778 D_RQ_SSP "D_RQ_SSP [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1778 1;
+
+BO_ 1780 APPL_SG_SSP: 8 ECM_1st_Group
+ SG_ APPL_SG_SSP : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1780 APPL_SG_SSP "APPL_SG_SSP [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1780 1;
+
+BO_ 1786 D_RQ_FSCM: 8 ECM_1st_Group
+ SG_ D_RQ_FSCM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1786 D_RQ_FSCM "D_RQ_FSCM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1786 1;
+
+BO_ 1788 APPL_SG_FSCM: 8 ECM_1st_Group
+ SG_ APPL_SG_FSCM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1788 APPL_SG_FSCM "APPL_SG_FSCM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1788 1;
+
+BO_ 1818 D_RQ_SSM: 8 ECM_1st_Group
+ SG_ D_RQ_SSM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1818 D_RQ_SSM "D_RQ_SSM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1818 1;
+
+BO_ 1820 APPL_SG_SSM: 8 ECM_1st_Group
+ SG_ APPL_SG_SSM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1820 APPL_SG_SSM "APPL_SG_SSM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1820 1;
+
+BO_ 1914 D_RQ_TSLM: 8 ECM_1st_Group
+ SG_ D_RQ_TSLM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1914 D_RQ_TSLM "D_RQ_TSLM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1914 1;
+
+BO_ 1916 APPL_SG_TSLM: 8 ECM_1st_Group
+ SG_ APPL_SG_TSLM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1916 APPL_SG_TSLM "APPL_SG_TSLM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1916 1;
+
+BO_ 1926 MESS_SSP1: 8 ECM_1st_Group
+ SG_ MESS_SSP1 : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1926 MESS_SSP1 "MESS_SSP1 [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1926 1;
+
+BO_ 1938 D_RQ_DSI: 8 ECM_1st_Group
+ SG_ D_RQ_DSI : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1938 D_RQ_DSI "D_RQ_DSI [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1938 1;
+
+BO_ 1946 D_RQ_TCASE: 8 ECM_1st_Group
+ SG_ D_RQ_TCASE : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1946 D_RQ_TCASE "D_RQ_TCASE [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1946 1;
+
+BO_ 1948 APPL_SG_TCASE: 8 ECM_1st_Group
+ SG_ APPL_SG_TCASE : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1948 APPL_SG_TCASE "APPL_SG_TCASE [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1948 1;
+
+BO_ 1962 D_RQ_FSCM2: 8 ECM_1st_Group
+ SG_ D_RQ_FSCM2 : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 1962 D_RQ_FSCM2 "D_RQ_FSCM2 [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 1962 1;
+
+BO_ 2015 DG_RQ_OBD: 8 ECM_1st_Group
+ SG_ DG_RQ_OBD : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 2015 DG_RQ_OBD "DG_RQ_OBD [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 2015 1;
+
+BO_ 2017 D_RQ_TCM: 8 ECM_1st_Group
+ SG_ D_RQ_TCM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 2017 D_RQ_TCM "D_RQ_TCM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 2017 1;
+
+BO_ 2019 D_RQ_FSCM_OBD: 8 ECM_1st_Group
+ SG_ D_RQ_FSCM_OBD : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 2019 D_RQ_FSCM_OBD "D_RQ_FSCM_OBD [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 2019 1;
+
+BO_ 2025 D_RS_TCM: 8 ECM_1st_Group
+ SG_ D_RS_TCM : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 2025 D_RS_TCM "D_RS_TCM [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 2025 1;
+
+BO_ 2027 D_RS_FSCM_OBD: 8 ECM_1st_Group
+ SG_ D_RS_FSCM_OBD : 0|64@1+ (1,0) [0|9.22337203685e+18] "" Vector__XXX
+CM_ SG_ 2027 D_RS_FSCM_OBD "D_RS_FSCM_OBD [source string/raw data]";
+
+BA_ "GenMsgCycleTime" BO_ 2027 1;
+
